@@ -141,8 +141,8 @@ p { margin: 0; }
 .seam__label--desk  { top: 22px; left: 14px; color: var(--d-ink); }
 /* The progress of the argument: one tick per act, filled through the act in view. */
 .seam__ticks {
-  position: absolute; bottom: 22px; right: 100%; margin-right: 14px;
-  display: flex; flex-direction: column; gap: 5px;
+  position: absolute; bottom: 18px; right: 100%; margin-right: 14px;
+  display: flex; flex-direction: column; gap: 3px;
 }
 .seam__ticks i {
   display: block; width: 10px; height: 2px; border-radius: 1px;
@@ -211,7 +211,10 @@ p { margin: 0; }
   margin-top: var(--sc-4); font-size: var(--sc-t-lg); line-height: 1.35;
   letter-spacing: -0.008em; font-weight: 450; white-space: nowrap;
 }
-.pane--field .support { font-weight: 480; letter-spacing: 0; }
+/* Both copies of the hero id must have identical geometry: the block is shrink-wrapped and
+   centred with a percentage translate, so any metric difference between the two support
+   lines shifts the name copies apart at the seam. Keep the field and desk metrics identical. */
+.pane--field .support { font-weight: 450; letter-spacing: -0.008em; }
 /* Narrow desktops: the support line wraps under the name instead of pushing the pair off the left edge.
    Balanced, so the field and desk copies break at the same word across the seam. */
 @media (min-width: 861px) and (max-width: 1150px) { .support { white-space: normal; text-wrap: balance; } }
@@ -384,7 +387,9 @@ p { margin: 0; }
   .act--hero .photo--desk img { object-position: 50% 4%; }
   .hl--field-hero { top: 30%; max-width: 70vw; font-size: clamp(2.2rem, 11vw, 3.2rem); }
   .hl--desk-hero { left: var(--sc-gutter); top: 62.2%; max-width: 80vw; font-size: clamp(1.35rem, 6.4vw, 1.9rem); }
-  .hero-id { left: var(--sc-gutter); right: var(--sc-gutter); top: 50%; transform: none; font-size: clamp(2.6rem, 12.6vw, 3.6rem); margin-top: -0.4em; }
+  /* The seam cuts the name through the middle of its caps, a deliberate two-tone word, and
+     the name stops short of the seam labels at the right. */
+  .hero-id { left: var(--sc-gutter); right: var(--sc-gutter); top: 50%; transform: none; font-size: clamp(2.4rem, 11.4vw, 3.3rem); margin-top: -0.42em; }
   .name { font-size: 1em; }
   .support { white-space: normal; max-width: none; font-size: 0.94rem; line-height: 1.42; margin-top: 0.85rem; }
 
@@ -451,10 +456,10 @@ p { margin: 0; }
    The image renders 125vw tall with its bottom 50vw under the box (window ends at 60%
    of the source). The cap on --ph keeps room for the name and support line. */
 @media (max-width: 860px) {
-  .act--hero, .act--gap { --ph: min(clamp(50vw, 29.5%, 72vw), calc(50% - 8.2rem)); }
+  .act--hero, .act--gap { --ph: min(clamp(50vw, 29.5%, 72vw), calc(50% - 9rem)); }
   .act--hero .photo--desk, .act--gap .photo--desk-r { height: var(--ph); }
   .act--hero .photo--desk img, .act--gap .photo--desk-r img { position: absolute; left: 0; bottom: -50vw; width: 100%; height: auto; }
-  .hl--desk-hero { top: auto; bottom: calc(var(--ph) + 0.75rem); }
+  .hl--desk-hero { top: auto; bottom: calc(var(--ph) + 0.75rem); max-width: none; }
 }
 @media (max-width: 860px) and (max-height: 620px) {
   .act--hero .photo--desk img, .act--gap .photo--desk-r img { bottom: -52vw; }
@@ -472,6 +477,8 @@ p { margin: 0; }
 }
 @media (max-width: 860px) and (max-height: 560px) {
   .act--hero .photo--desk { height: 18%; }
+  /* A strip this short shows the eyes and the smile: the window starts at 25% of the source. */
+  .act--hero .photo--desk img { bottom: calc(100% - 93.75vw); }
   .hl--desk-hero { top: auto; bottom: calc(18% + 0.6rem); font-size: clamp(1.2rem, 6vh, 1.9rem); }
   .support { font-size: 0.85rem; margin-top: 0.5rem; }
   .hl--field-hero { top: 26%; }

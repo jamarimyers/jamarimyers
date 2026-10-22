@@ -28,9 +28,7 @@ changes only grammar and world will fail it.
 
 | Build | Grammar | Nav treatment | Hero device | Act-sequence shape | Close pattern | Signature move | World | Port |
 |---|---|---|---|---|---|---|---|---|
-
-*(empty: your first build has nothing to clear, so build whatever the interview
-points at. From the second onwards, this table is the constraint.)*
+| jamarimyers.com (2026-10-22) | Split stage | divider-as-chrome with side labels and progress | 50/50 dual-ground split, name across seam | pin 1.6, reveal (flow, about 1.5), pin 2.4 (quiet), pin 3.2 (collapse), flow (about 1.9), pin 1.2: 6 acts, about 11.7vh at 1440x900 | divider collapses, CTA in winning column | draggable handle that scroll takes over at the peak | typographic plus two portraits, duotone to full colour at the peak | desktop and phone art-directed separately |
 
 ---
 
@@ -41,7 +39,7 @@ reusing: a grammar, a nav treatment, a close pattern, a signature move, an
 act-count-and-length band. The shared columns are what the next build inherits
 as a constraint, so writing them down is the whole point.
 
-Nothing is taken yet.
+- jamarimyers.com: the split stage grammar, divider-as-chrome nav, the draggable seam handle that scroll takes over at the peak, the collapse close with the CTA in the winning column, and the 6-act band of about 11.7vh with a quiet pin directly before the collapse pin.
 
 ---
 

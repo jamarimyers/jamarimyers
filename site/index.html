@@ -24,7 +24,7 @@
 <link rel="preload" as="image" href="assets/img/field-red-lit.webp" fetchpriority="high">
 <link rel="stylesheet" href="scrollcraft.css">
 <link rel="stylesheet" href="site.css">
-<noscript><style>[data-sc-cue],[data-sc-in],[data-sc-stagger]>*{opacity:1!important;transform:none!important}.act>[data-sc-stage]{position:relative;height:100vh;height:100svh;overflow:clip}.act--hero,.act--morning,.act--gap,.act--close{height:auto}.act--gap,.act--close{--split:1}.act--gap .hl--field-hero,.act--gap .pane--desk,.act--gap .mseam,.seam{display:none}</style></noscript>
+<noscript><style>[data-sc-cue],[data-sc-in],[data-sc-stagger]>*{opacity:1!important;transform:none!important}.act>[data-sc-stage]{position:relative;height:100vh;height:100svh;overflow:clip}.act--hero,.act--morning,.act--gap,.act--close{height:auto;content-visibility:visible}.act--gap,.act--close{--split:1}.act--gap .hl--field-hero,.act--gap .pane--desk,.act--gap .mseam,.seam{display:none}</style></noscript>
 </head>
 <body>
 
@@ -138,7 +138,7 @@
               </div>
               <div class="entry">
                 <dt>Brown University</dt>
-                <dd>B.A. Business Economics, Entrepreneurship track, Class of <span class="fig">2027</span></dd>
+                <dd>B.A. Business Economics, <span class="nb">Entrepreneurship track</span>, Class of <span class="fig">2027</span></dd>
               </div>
             </dl>
           </div>
@@ -295,10 +295,11 @@
       u.setAttribute('data-sc-reveal-at', a.toFixed(4) + ' ' + Math.max(b, a + 0.05).toFixed(4));
     });
   });
-  // Reduced motion: no counting at all, the real figure is simply there.
+  // Reduced motion, and phones (where each row is uncovered before a count
+  // could finish): no counting at all, the real figure is simply there.
   var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
   [].forEach.call(act.querySelectorAll('[data-auto-count]'), function (el) {
-    if (still) { el.removeAttribute('data-sc-count'); return; }
+    if (still || phone) { el.removeAttribute('data-sc-count'); return; }
     var r = el.getBoundingClientRect();
     var a = pAt(r.top + y0 - 0.98 * vh), b = pAt(r.top + y0 - 0.74 * vh);
     el.setAttribute('data-sc-count-at', a.toFixed(4) + ' ' + b.toFixed(4));
