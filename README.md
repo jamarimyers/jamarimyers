@@ -1,16 +1,15 @@
-## Hi there 👋
+# Jamari Myers
 
-<!--
-**jamarimyers/jamarimyers** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Founder of [Osmo](https://osmoperformance.com) | Brown University
 
-Here are some ideas to get you started:
+I'm building **Osmo**, an emotional-performance platform helping collegiate athletes better understand and regulate their performance states.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### What I'm building
+- **Osmo Performance** — athlete experience, wearable integrations, and team performance tools
+- **Technology** — TypeScript, React Native, Expo, Node.js, and Supabase
+- **Interests** — entrepreneurship, applied AI, sports technology, and human performance
+
+### Connect
+- [Osmo](https://osmoperformance.com)
+- [Personal website](https://jamarimyers.com)
+- Email: jamari@osmoperformance.com
