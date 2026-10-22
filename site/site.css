@@ -190,16 +190,17 @@ p { margin: 0; }
 
 /* ================================================================ ACT 1 == */
 .act--hero [data-sc-stage] { touch-action: pan-y; }
-.act--hero .photo { top: 0; width: 54%; height: 57%; transform: translate3d(calc(var(--follow) * 50vw), 0, 0); }
+.act--hero .photo { top: 0; width: 54%; height: 57%; }
 .act--hero .photo--field {
   left: 0;
+  transform: translate3d(calc(min(var(--follow), 0) * 50vw), 0, 0);
   -webkit-mask-image: linear-gradient(to bottom, #000 58%, transparent 100%), linear-gradient(to right, #000 93%, transparent 100%);
   -webkit-mask-composite: source-in;
   mask-image: linear-gradient(to bottom, #000 58%, transparent 100%), linear-gradient(to right, #000 93%, transparent 100%);
   mask-composite: intersect;
 }
 .act--hero .photo--field img { object-position: 50% 8%; transform: scale(1.2); transform-origin: 100% 0; }
-.act--hero .photo--desk { right: 0; border-left: 1px solid var(--d-soft); border-bottom: 1px solid var(--d-soft); background: var(--d-surface); }
+.act--hero .photo--desk { right: 0; transform: translate3d(calc(max(var(--follow), 0) * 50vw), 0, 0); border-left: 1px solid var(--d-soft); border-bottom: 1px solid var(--d-soft); background: var(--d-surface); }
 .act--hero .photo--desk img { object-position: 50% 0%; }
 
 .hl--field-hero { position: absolute; left: var(--sc-gutter); top: 42%; max-width: 38vw; font-size: clamp(3rem, 5.8vw, 6rem); }
@@ -375,6 +376,7 @@ p { margin: 0; }
   }
   .mseam__line { position: absolute; left: 80%; right: 0; top: 0; height: 1px; margin-top: -0.5px; background: color-mix(in oklab, var(--f-accent) 75%, transparent); opacity: var(--seam-o); }
   .mseam__l { position: absolute; right: 16px; font-family: var(--sc-font-display); font-size: 0.78rem; letter-spacing: 0.01em; font-weight: 600; line-height: 1; opacity: var(--label-o, 1); }
+  .mseam__l::before { content: attr(data-l); }
   .mseam__l--field { bottom: 100%; margin-bottom: 8px; color: var(--f-soft); }
   .mseam__l--desk  { top: 8px; color: var(--d-soft); }
 
@@ -428,6 +430,7 @@ p { margin: 0; }
       linear-gradient(0deg, color-mix(in oklab, var(--f-canvas) 94%, transparent) 0%, color-mix(in oklab, var(--f-canvas) 60%, transparent) 30%, transparent 50%);
   }
   .gap-line { top: 8%; right: var(--sc-gutter); max-width: none; font-size: clamp(1.6rem, 7.4vw, 2.2rem); }
+  .act--gap .hl--field-hero { display: none; }
   .osmo { top: auto; bottom: 19%; font-size: clamp(5.5rem, 33vw, 9rem); }
   .belief { top: auto; bottom: 7%; right: var(--sc-gutter); font-size: 1.15rem; }
 

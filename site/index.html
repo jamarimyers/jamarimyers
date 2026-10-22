@@ -70,7 +70,7 @@
           <p class="hl--desk-hero v-desk" data-stretch="desk">Trained on the desk.</p>
         </div>
       </div>
-      <div class="mseam" aria-hidden="true"><span class="mseam__line"></span><span class="mseam__l mseam__l--field">Field</span><span class="mseam__l mseam__l--desk">Desk</span></div>
+      <div class="mseam" aria-hidden="true"><span class="mseam__line"></span><span class="mseam__l mseam__l--field" data-l="Field"></span><span class="mseam__l mseam__l--desk" data-l="Desk"></span></div>
     </div>
   </section>
 
@@ -148,7 +148,7 @@
   </section>
 
   <!-- 3 UNEASE. Pin, the quiet act. The first 30% is authored silence: two
-       grounds and one number. Then second-person copy arrives on the desk. -->
+       grounds and one number. Then first-person copy arrives on the desk. -->
   <section class="act act--morning" data-sc-act="pin" data-sc-span="2.4" data-act-name="The morning">
     <div data-sc-stage class="stage">
       <div class="pane pane--field">
@@ -161,13 +161,13 @@
       <div class="pane pane--desk">
         <div class="follow">
           <div class="morning">
-            <h2 class="v-desk" data-sc-cue="0.28 0.985 0.1 0.03">Every morning you know your recovery score. It arrives with strain and sleep quality, and no context.</h2>
-            <p data-sc-cue="0.44 0.985 0.1 0.03">A low number does not produce a better decision. It produces another thing to worry about before practice has even started.</p>
-            <p class="is-last" data-sc-cue="0.6 0.985 0.1 0.03">Nobody gives you anything for the mornings you wake up flat before a game.</p>
+            <h2 class="v-desk" data-sc-cue="0.28 0.985 0.1 0.03">Every morning I knew my recovery score. It arrived with strain and sleep quality, and no context.</h2>
+            <p data-sc-cue="0.44 0.985 0.1 0.03">A low number gave me another thing to worry about before practice had even started.</p>
+            <p class="is-last" data-sc-cue="0.6 0.985 0.1 0.03">Nobody gave me anything for the mornings I woke up flat before a game.</p>
           </div>
         </div>
       </div>
-      <div class="mseam" aria-hidden="true"><span class="mseam__line"></span><span class="mseam__l mseam__l--field">Field</span><span class="mseam__l mseam__l--desk">Desk</span></div>
+      <div class="mseam" aria-hidden="true"><span class="mseam__line"></span><span class="mseam__l mseam__l--field" data-l="Field"></span><span class="mseam__l mseam__l--desk" data-l="Desk"></span></div>
     </div>
   </section>
 
@@ -194,7 +194,7 @@
           <p class="hl--desk-hero v-desk" data-stretch="desk">Trained on the desk.</p>
         </div>
       </div>
-      <div class="mseam" aria-hidden="true"><span class="mseam__line"></span><span class="mseam__l mseam__l--field">Field</span><span class="mseam__l mseam__l--desk">Desk</span></div>
+      <div class="mseam" aria-hidden="true"><span class="mseam__line"></span><span class="mseam__l mseam__l--field" data-l="Field"></span><span class="mseam__l mseam__l--desk" data-l="Desk"></span></div>
     </div>
   </section>
 
@@ -215,7 +215,7 @@
           <dd>The research is early and I call it exploratory. In fall 2025 I ran <b>11</b> interviews and a <b>48</b>-person student-athlete survey. Of those surveyed, <b>90%</b> want structured guidance and <b>43%</b> say what they do now works (n=<b>48</b>).</dd>
         </div>
         <div class="fact">
-          <dt>Status</dt>
+          <dt>Status, <time datetime="2026-10">October 2026</time></dt>
           <dd>App built; in release testing with early athletes. Osmo has WHOOP developer access and works without a wearable.</dd>
         </div>
       </dl>
@@ -304,6 +304,7 @@
     var a = pAt(r.top + y0 - 0.98 * vh), b = pAt(r.top + y0 - 0.74 * vh);
     el.setAttribute('data-sc-count-at', a.toFixed(4) + ' ' + b.toFixed(4));
   });
+  if (phone) { var g = document.querySelector('.act--gap .gap-line'); if (g) g.setAttribute('data-sc-cue', '0.02'); }
   if (/[?&]slots\b/.test(location.search)) document.documentElement.classList.add('show-slots');
 })();
 </script>

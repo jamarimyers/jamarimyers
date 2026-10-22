@@ -171,7 +171,6 @@
     grip.addEventListener('pointerdown', function (e) {
       if (e.button !== 0 || !handleAllowed()) return;
       e.preventDefault();
-      grip.focus({ preventScroll: true });
       mode = 'drag'; manual = fromX(e.clientX);
       root.classList.add('is-dragging');
       try { grip.setPointerCapture(e.pointerId); } catch (err) {}
