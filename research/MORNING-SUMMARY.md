@@ -44,6 +44,8 @@ is the Osmo facts and a three-photo "Elsewhere" strip. Act 6 is "Write to me." w
   photo were not used.
 - Osmo founding date on the resume page (left blank), "expected May 2027" vs "Class of 2027".
 - Whether to add a line about being first-gen, and whether to name the four brands.
+- The Status row on the home page is dated "October 2026" (`site/index.html`, the `<time>` in the
+  Osmo facts). Update that month whenever the status line changes, so it never reads as stale.
 - GitHub Pages: enable it in the repo settings (Source: GitHub Actions) and merge to `main` when
   you want a staging URL at jamarimyers.github.io/jamarimyers. The 404 page uses root paths, so
   it only works once the site is at the domain root (jamarimyers.com). Point DNS only when ready.

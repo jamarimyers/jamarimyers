@@ -25,7 +25,7 @@ Peak at 4 (the collapse). Settles in 5. Resolves in 6.
 ```
 1  Recognition   two grounds split down the middle, one name across both, both readable at once
 2  Respect       the ledger of what each half cost (hours, seasons, summers), landing in columns
-3  Unease        the quiet act: a recovery score arrives with no instruction, copy in second person
+3  Unease        the quiet act: a recovery score arrives with no instruction, copy in first person
 4  Resolve       the divider travels and the dark side takes the whole frame. One company.
 5  Confidence    the plain facts of Osmo on one calm ground, no pitch, with the stack and the status
 6  Readiness     the page stops. One email address. The footer lives inside the last stage.
@@ -84,7 +84,7 @@ copy arrives. That is intentional, not dead scroll.
 |---|---|---|
 | 1 Recognition | `pin` + split driven from --sc-p (hold at 50/50) | both sides must be read before anything moves |
 | 2 Respect | `reveal` per side + `count` on real figures | columns landing is the comparison |
-| 3 Unease | `pin`, long, mostly empty, then second-person copy | the silence before the peak |
+| 3 Unease | `pin`, long, mostly empty, then first-person copy | the silence before the peak |
 | 4 Resolve | `pin`, largest span, divider driven to 100/0 | the collapse is the peak |
 | 5 Confidence | `flow` + `in` | administrative facts, compressed |
 | 6 Readiness | `pin`, short, one-value cues | resolves and holds |
