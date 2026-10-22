@@ -4,27 +4,40 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Jamari Myers</title>
-<meta name="description" content="Jamari Myers is the founder of Osmo, an emotional performance platform for college athletes, and a former Division I football player at Brown.">
+<meta name="description" content="Jamari Myers, founder of Osmo, is building what comes after the recovery score for college athletes. He played Division I football at Brown and spent summers 2025 and 2026 in investment banking at J.P. Morgan in New York.">
+<link rel="canonical" href="https://jamarimyers.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jamari Myers">
+<meta property="og:description" content="Jamari Myers, founder of Osmo, is building what comes after the recovery score for college athletes. He played Division I football at Brown and spent summers 2025 and 2026 in investment banking at J.P. Morgan in New York.">
+<meta property="og:url" content="https://jamarimyers.com/">
+<meta property="og:image" content="https://jamarimyers.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jamari Myers">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jamari Myers">
+<meta name="twitter:description" content="Jamari Myers, founder of Osmo, is building what comes after the recovery score for college athletes. He played Division I football at Brown and spent summers 2025 and 2026 in investment banking at J.P. Morgan in New York.">
 <meta name="theme-color" content="#0E1B22">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M0 0H32L0 32Z' fill='%230E1B22'/><path d='M32 0V32H0Z' fill='%23F4F2EE'/></svg>">
 <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/img/field-red-lit.webp">
+<link rel="preload" as="image" href="assets/img/field-red-lit.webp" fetchpriority="high">
 <link rel="stylesheet" href="scrollcraft.css">
 <link rel="stylesheet" href="site.css">
+<noscript><style>[data-sc-cue],[data-sc-in],[data-sc-stagger]>*{opacity:1!important;transform:none!important}.act>[data-sc-stage]{position:relative;height:100vh;height:100svh;overflow:clip}.act--hero,.act--morning,.act--gap,.act--close{height:auto}.act--gap,.act--close{--split:1}.act--gap .hl--field-hero,.act--gap .pane--desk,.act--gap .mseam,.seam{display:none}</style></noscript>
 </head>
 <body>
 
 <div class="sc-grain" aria-hidden="true"></div>
 
-<!-- The divider is the chrome: side labels, the act readout, and the handle. -->
+<!-- The divider is the chrome: side labels, the act progress, and the handle. -->
 <div class="seam" data-sc-verify-state="0.500">
   <div class="seam__track">
     <span class="seam__line" aria-hidden="true"></span>
     <span class="seam__label seam__label--field" aria-hidden="true">Field</span>
     <span class="seam__label seam__label--desk" aria-hidden="true">Desk</span>
-    <span class="seam__readout" aria-hidden="true">Two halves</span>
-    <button class="seam__grip" type="button" aria-label="Drag to compare the field and the desk"><span class="seam__knob"></span></button>
+    <span class="seam__ticks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+    <div class="seam__grip" role="slider" tabindex="0" aria-label="Field and desk divider" aria-orientation="horizontal" aria-valuemin="8" aria-valuemax="92" aria-valuenow="50" aria-valuetext="Field 50 percent, desk 50 percent"><span class="seam__knob"></span></div>
   </div>
 </div>
 
@@ -46,7 +59,7 @@
       </div>
       <div class="pane pane--desk">
         <figure class="photo photo--desk">
-          <img src="assets/img/desk-headshot.webp" width="1229" height="1536" loading="eager" decoding="async"
+          <img src="assets/img/desk-headshot.webp" srcset="assets/img/desk-headshot-800.webp 800w, assets/img/desk-headshot.webp 1229w" sizes="(max-width: 860px) 100vw, 54vw" width="1229" height="1536" loading="eager" decoding="async"
                alt="Jamari Myers in a blue suit and tie, smiling, against a grey backdrop">
         </figure>
         <div class="hero-id" aria-hidden="true">
@@ -71,19 +84,27 @@
           <h2 class="v-field">Two seasons of Division I, and the years before them.</h2>
           <dl class="entries">
             <div class="entry">
-              <dt>Brown University, 2023 to 2025</dt>
-              <dd>Division I football, defensive back</dd>
+              <dt>Brown Bears</dt>
+              <dd>Defensive back, Division I, August <span class="fig">2023</span> to January <span class="fig">2025</span></dd>
             </div>
             <div class="entry">
-              <dt>2024 season</dt>
-              <dd><span class="fig" data-sc-count="0 5" data-auto-count>5</span> games, <span class="fig" data-sc-count="0 4.0" data-auto-count>4.0</span> tackles, <span class="fig" data-sc-count="0 1" data-auto-count>1</span> pass breakup</dd>
+              <dt>Seasons</dt>
+              <dd>Two. Stopped playing after sophomore year</dd>
             </div>
             <div class="entry">
-              <dt>St. Paul&rsquo;s School, Concord, class of 2023</dt>
-              <dd>First Team All-Evergreen Conference, <span class="fig">2022</span><small>All-NEPSAC Honorable Mention</small></dd>
+              <dt class="fig">2024</dt>
+              <dd><span class="fig">5</span> games, <span class="fig">4.0</span> tackles, <span class="fig">1</span> pass breakup</dd>
             </div>
             <div class="entry">
-              <dt>Home</dt>
+              <dt>St. Paul&rsquo;s School</dt>
+              <dd>Concord, New Hampshire, Class of <span class="fig">2023</span></dd>
+            </div>
+            <div class="entry">
+              <dt class="fig">2022</dt>
+              <dd>First Team All-Evergreen Conference, All-NEPSAC Honorable Mention</dd>
+            </div>
+            <div class="entry">
+              <dt>Hometown</dt>
               <dd>Allen, Texas</dd>
             </div>
           </dl>
@@ -96,8 +117,8 @@
             <h2 class="v-desk">Three summers in finance, and the work between them.</h2>
             <dl class="entries">
               <div class="entry">
-                <dt>Summer analyst</dt>
-                <dd>Investment banking at J.P. Morgan, New York, summers <span class="fig">2025</span> and <span class="fig">2026</span>.</dd>
+                <dt>J.P. Morgan</dt>
+                <dd>Investment banking, New York, summers <span class="fig">2025</span> and <span class="fig">2026</span></dd>
               </div>
               <div class="entry">
                 <dt>Decatur Street Capital, summer 2024</dt>
@@ -105,15 +126,19 @@
               </div>
               <div class="entry">
                 <dt>BLK Capital Management, Sponsorship Chair</dt>
-                <dd>Partnerships across <span class="fig" data-sc-count="0 30" data-auto-count>30</span>+ financial-services firms<small>A resume book built from <span class="fig" data-sc-count="0 600" data-auto-count>600</span>+ member responses</small></dd>
+                <dd>Partnerships across <span class="fig" aria-hidden="true" data-sc-count="0 30" data-auto-count>30</span><span class="vh">30</span>+ financial-services firms<small>A resume book built from <span class="fig" aria-hidden="true" data-sc-count="0 600" data-auto-count>600</span><span class="vh">600</span>+ member responses</small></dd>
               </div>
               <div class="entry">
                 <dt>Black in Business at Brown, Chair of Finance</dt>
-                <dd>A panel of <span class="fig" data-sc-count="0 7" data-auto-count>7</span> student founders<small>A personal-finance workshop for <span class="fig" data-sc-count="0 40" data-auto-count>40</span> high-school students</small></dd>
+                <dd>A panel of <span class="fig">7</span> student founders<small>A personal-finance workshop for <span class="fig">40</span> high-school students</small></dd>
               </div>
               <div class="entry">
                 <dt>Fellowships</dt>
-                <dd>Roark Capital Investment Fellow, SEO Career, Make-A-Play King&rsquo;s Court Fellow</dd>
+                <dd>Roark Capital Investment Fellow, SEO Career, <span class="nb">Make-A-Play</span> Foundation King&rsquo;s Court Fellow</dd>
+              </div>
+              <div class="entry">
+                <dt>Brown University</dt>
+                <dd>B.A. Business Economics, Entrepreneurship track, Class of <span class="fig">2027</span></dd>
               </div>
             </dl>
           </div>
@@ -128,17 +153,17 @@
     <div data-sc-stage class="stage">
       <div class="pane pane--field">
         <p class="score">
+          <span class="score__l">Recovery score</span>
           <span class="score__n">41</span>
-          <span class="score__l">recovery</span>
-          <span class="vh">Illustrative score, not real data.</span>
+          <span class="score__note">An example morning</span>
         </p>
       </div>
       <div class="pane pane--desk">
         <div class="follow">
           <div class="morning">
-            <h2 class="v-desk" data-sc-cue="0.28 0.985 0.1 0.03">Every morning the score is there. Nobody tells you what to do about it.</h2>
-            <p data-sc-cue="0.44 0.985 0.1 0.03">Recovery, strain, sleep. All of it arrives before practice, with no instruction.</p>
-            <p class="is-last" data-sc-cue="0.6 0.985 0.1 0.03">A low number does not produce a better decision. It produces one more thing to worry about.</p>
+            <h2 class="v-desk" data-sc-cue="0.28 0.985 0.1 0.03">Every morning you know your recovery score. It arrives with strain and sleep quality, and no context.</h2>
+            <p data-sc-cue="0.44 0.985 0.1 0.03">A low number does not produce a better decision. It produces another thing to worry about before practice has even started.</p>
+            <p class="is-last" data-sc-cue="0.6 0.985 0.1 0.03">Nobody gives you anything for the mornings you wake up flat before a game.</p>
           </div>
         </div>
       </div>
@@ -156,14 +181,14 @@
           <img class="ph-color" src="assets/img/field-red-lit.webp" width="1026" height="1536" loading="lazy" decoding="async" alt="">
         </figure>
         <div class="gap-scrim" aria-hidden="true"></div>
-        <p class="hl--field-hero v-field" data-stretch="field" data-sc-cue="0 0.42 0 0.4" aria-hidden="true">Trained on the field.</p>
-        <h2 class="gap-line" data-sc-cue="0.34">The gap was never measurement. It was what to do next.</h2>
+        <p class="hl--field-hero v-field" data-stretch="field" data-sc-cue="0 0.3 0 0.5" aria-hidden="true">Trained on the field.</p>
+        <h2 class="gap-line" data-sc-cue="0.3">Measurement had been solved. The gap was what to do next.</h2>
         <p class="osmo" data-sc-cue="0.56">Osmo</p>
         <p class="belief" data-sc-cue="0.64">Physical performance is trained. Emotional performance should be too.</p>
       </div>
       <div class="pane pane--desk" aria-hidden="true">
         <figure class="photo photo--desk-r">
-          <img src="assets/img/desk-headshot.webp" width="1229" height="1536" loading="lazy" decoding="async" alt="">
+          <img src="assets/img/desk-headshot.webp" srcset="assets/img/desk-headshot-800.webp 800w, assets/img/desk-headshot.webp 1229w" sizes="(max-width: 860px) 100vw, 54vw" width="1229" height="1536" loading="lazy" decoding="async" alt="">
         </figure>
         <div class="follow">
           <p class="hl--desk-hero v-desk" data-stretch="desk">Trained on the desk.</p>
@@ -178,7 +203,7 @@
     <div class="osmo-wrap">
       <div class="osmo-head" data-sc-in data-sc-stagger="60">
         <h2>Osmo is an emotional performance platform for college athletes, sold to athletic departments.</h2>
-        <p class="lede">A short morning check-in, optional wearable context, one next move for today.</p>
+        <p class="lede">It gives each athlete a short morning check-in, optional wearable context and one next move for today.</p>
       </div>
       <dl class="facts" data-sc-in data-sc-stagger="60">
         <div class="fact">
@@ -186,12 +211,12 @@
           <dd>Athletes choose what is shared. Coaches see a simple readiness label, never journals or raw biometrics.</dd>
         </div>
         <div class="fact">
-          <dt>Grounded in early research.</dt>
-          <dd>Fall 2025, exploratory: <b>11</b> interviews and a student-athlete survey (n=<b>48</b>). <b>90%</b> of those surveyed wanted structured guidance; <b>43%</b> said what they do now works.</dd>
+          <dt>Research</dt>
+          <dd>The research is early and I call it exploratory. In fall 2025 I ran <b>11</b> interviews and a <b>48</b>-person student-athlete survey. Of those surveyed, <b>90%</b> want structured guidance and <b>43%</b> say what they do now works (n=<b>48</b>).</dd>
         </div>
         <div class="fact">
-          <dt>Status.</dt>
-          <dd>App built, in release testing with early athletes. Osmo has WHOOP developer access and works without a wearable.</dd>
+          <dt>Status</dt>
+          <dd>App built; in release testing with early athletes. Osmo has WHOOP developer access and works without a wearable.</dd>
         </div>
       </dl>
       <div data-sc-in data-sc-stagger="60">
@@ -203,25 +228,23 @@
       <section class="elsewhere" aria-labelledby="elsewhere-h">
         <div data-sc-in data-sc-stagger="60">
           <h3 id="elsewhere-h">Elsewhere</h3>
-          <p>A semester in Rome, four brand partnerships negotiated from scratch, and a camera in a lot of places.</p>
+          <p>I spent a semester in Rome and negotiated four brand partnerships while I was there. I&nbsp;speak intermediate Mandarin and elementary Italian.</p>
         </div>
         <ul class="strip" data-sc-in data-sc-stagger="50">
-          <li><figure><img src="assets/img/travel-sahara.webp" width="900" height="1200" loading="lazy" decoding="async" style="object-position: 50% 62%" alt="Jamari Myers standing on a dune in the Sahara at sunrise"><figcaption>Sahara</figcaption></figure></li>
-          <li><figure><img src="assets/img/travel-petra.webp" width="900" height="1200" loading="lazy" decoding="async" style="object-position: 50% 74%" alt="Jamari Myers seated on a rock in front of the Treasury at Petra"><figcaption>Petra</figcaption></figure></li>
-          <li><figure><img src="assets/img/travel-rome.webp" width="900" height="1200" loading="lazy" decoding="async" style="object-position: 50% 52%" alt="Jamari Myers with his arms open inside the Colosseum in Rome"><figcaption>Rome</figcaption></figure></li>
-          <li><figure><img src="assets/img/travel-budapest.webp" width="900" height="1200" loading="lazy" decoding="async" style="object-position: 50% 70%" alt="Jamari Myers standing in an ornate gilded hall in Budapest"><figcaption>Budapest</figcaption></figure></li>
-          <li><figure><img src="assets/img/travel-nyc.webp" width="900" height="1200" loading="lazy" decoding="async" style="object-position: 50% 62%" alt="Jamari Myers at a restaurant table above the New York skyline at night"><figcaption>New York</figcaption></figure></li>
+          <li><figure><img src="assets/img/travel-rome-480.webp" srcset="assets/img/travel-rome-480.webp 480w, assets/img/travel-rome.webp 800w" sizes="(max-width: 860px) calc((100vw - 2rem) * 0.62), 240px" width="480" height="640" loading="lazy" decoding="async" alt="Jamari Myers with his arms open inside the Colosseum in Rome"><figcaption>Rome</figcaption></figure></li>
+          <li><figure><img src="assets/img/travel-sahara-480.webp" srcset="assets/img/travel-sahara-480.webp 480w, assets/img/travel-sahara.webp 800w" sizes="(max-width: 860px) calc((100vw - 2rem) * 0.62), 240px" width="480" height="640" loading="lazy" decoding="async" alt="Jamari Myers standing on a dune in the Sahara at sunrise"><figcaption>Sahara</figcaption></figure></li>
+          <li><figure><img src="assets/img/travel-petra-480.webp" srcset="assets/img/travel-petra-480.webp 480w, assets/img/travel-petra.webp 800w" sizes="(max-width: 860px) calc((100vw - 2rem) * 0.62), 240px" width="480" height="640" loading="lazy" decoding="async" alt="Jamari Myers seated on a rock in front of the Treasury at Petra"><figcaption>Petra</figcaption></figure></li>
         </ul>
       </section>
     </div>
   </section>
 
   <!-- 6 READINESS. Last element on the page. One action. Footer inside. -->
-  <section class="act act--close" id="contact" data-sc-act="pin" data-sc-span="1.2" data-act-name="Say hello">
+  <section class="act act--close" id="contact" data-sc-act="pin" data-sc-span="1.2" data-act-name="Write to me">
     <div data-sc-stage class="stage">
       <div class="close">
         <div class="close__inner">
-          <h2 data-sc-cue="0 1 0 0">Building it now. Say hello.</h2>
+          <h2 data-sc-cue="0 1 0 0">Write to me.</h2>
           <div class="cta-row" data-sc-cue="0 1 0 0" data-sc-rise="0">
             <a class="cta" href="mailto:jamari@osmoperformance.com">Email Jamari</a>
             <span class="cta-addr">jamari@osmoperformance.com</span>
@@ -231,6 +254,8 @@
           <span>Jamari Myers, Brown University &rsquo;27</span>
           <span class="fig">2026</span>
           <span class="foot__spacer"></span>
+          <a class="link" href="resume.html">Resume</a>
+          <a class="link" href="connect.html">Connect</a>
           <a class="link" href="https://github.com/jamarimyers">GitHub</a>
           <a class="link" href="https://www.linkedin.com/in/jamari-myers">LinkedIn</a>
         </footer>
@@ -250,11 +275,25 @@
   var vh = innerHeight, y0 = scrollY;
   var top = act.getBoundingClientRect().top + y0, H = act.offsetHeight;
   var pAt = function (sy) { return Math.max(0, Math.min(1, (sy + vh - top) / (H + vh))); };
+  // Phones stack the columns, so one tall wipe would leave the lower screen
+  // empty while the visitor reads. There the heading and each row wipe in on
+  // their own as they reach the bottom edge.
+  var phone = matchMedia('(max-width: 860px)').matches;
   [].forEach.call(act.querySelectorAll('[data-auto-reveal]'), function (el) {
     var f = el.getAttribute('data-auto-reveal').split(' ').map(parseFloat);
-    var r = el.getBoundingClientRect();
-    var a = pAt(r.top + y0 - f[0] * vh), b = pAt(r.bottom + y0 - f[1] * vh);
-    el.setAttribute('data-sc-reveal-at', a.toFixed(4) + ' ' + Math.max(b, a + 0.05).toFixed(4));
+    var units = [el];
+    if (phone) {
+      var dir = el.getAttribute('data-sc-reveal') || 'up';
+      f = [0.98, 0.8];
+      units = [].slice.call(el.querySelectorAll('h2, .entry'));
+      units.forEach(function (u) { u.setAttribute('data-sc-reveal', dir); });
+      el.removeAttribute('data-sc-reveal');
+    }
+    units.forEach(function (u) {
+      var r = u.getBoundingClientRect();
+      var a = pAt(r.top + y0 - f[0] * vh), b = pAt(r.bottom + y0 - f[1] * vh);
+      u.setAttribute('data-sc-reveal-at', a.toFixed(4) + ' ' + Math.max(b, a + 0.05).toFixed(4));
+    });
   });
   // Reduced motion: no counting at all, the real figure is simply there.
   var still = matchMedia('(prefers-reduced-motion: reduce)').matches;

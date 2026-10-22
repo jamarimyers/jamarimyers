@@ -9,7 +9,8 @@
      act 4  travels 0.5 -> 1.0 (fast first half, slow settle), scroll owns it
      act 5+ stays at 1.0
    The handle (acts 1 to 3): drag the seam on a fine pointer, swipe across the
-   hero on touch, or focus it and use the arrow keys. On release it springs
+   hero on touch, or focus it and use the arrow keys (Home and End go to the
+   limits). On release it springs
    back to wherever the scroll says it should be. Disabled under reduced motion.
    ========================================================================== */
 (function () {
@@ -24,7 +25,7 @@
   var hero = acts[0], ledger = acts[1], gap = acts[3];
   var seam = document.querySelector('.seam');
   var grip = document.querySelector('.seam__grip');
-  var readouts = [].slice.call(document.querySelectorAll('.seam__readout'));
+  var ticks = [].slice.call(document.querySelectorAll('.seam__ticks i'));
   var colF = ledger.querySelector('.col--field');
   var colD = ledger.querySelector('.col--desk');
 
@@ -56,13 +57,12 @@
   var mode = 'scroll';          // scroll | drag | key | spring
   var d = 0.5, vel = 0, manual = 0.5;
   var lastT = performance.now();
-  var written = {};
   var idx = 0, lastIdx = -1;
 
   function put(el, k, v) {
-    var key = (el === root ? 'r' : el === gap ? 'g' : 's') + k;
-    if (written[key] === v) return;
-    written[key] = v;
+    var w = el.__w || (el.__w = {});
+    if (w[k] === v) return;
+    w[k] = v;
     el.style.setProperty(k, v);
   }
 
@@ -122,12 +122,24 @@
     var dev = d - t;
     var follow = dev + T.lean;
     put(root, '--split', d.toFixed(3));
+    var pct = Math.round(clamp(d, MIN, MAX) * 100);
+    if (grip && grip.__v !== pct) {
+      grip.__v = pct;
+      grip.setAttribute('aria-valuenow', pct);
+      grip.setAttribute('aria-valuetext', 'Field ' + pct + ' percent, desk ' + (100 - pct) + ' percent');
+    }
     put(root, '--follow', follow.toFixed(4));
     put(root, '--fsf', clamp(76 + (d - 0.5) * 48, 62, 125).toFixed(1));
     put(root, '--fsd', clamp(112 - (d - 0.5) * 40, 62, 125).toFixed(1));
     put(root, '--seam-o', (1 - smooth((d - 0.9) / 0.08)).toFixed(3));
     // The side labels belong to the comparison; they leave as soon as the collapse starts.
     put(root, '--label-o', (1 - smooth(T.c / 0.12)).toFixed(3));
+    // Acts 1 to 3 are off screen once the collapse has begun; hold them at their act-3 values.
+    var held = T.p4 > 0;
+    put(ledger, '--split', (held ? 0.5 : d).toFixed(3));
+    put(ledger, '--follow', (held ? 0 : follow).toFixed(4));
+    put(ledger, '--fsf', (held ? 76 : clamp(76 + (d - 0.5) * 48, 62, 125)).toFixed(1));
+    put(ledger, '--fsd', (held ? 112 : clamp(112 - (d - 0.5) * 40, 62, 125)).toFixed(1));
 
     var bloom = smooth((T.p4 - 0.5) / 0.3);
     put(gap, '--bloom', bloom.toFixed(3));
@@ -141,18 +153,10 @@
     }
     if (seam.__h !== hold) { seam.__h = hold; seam.setAttribute('data-sc-verify-hold', hold ? 'true' : 'false'); }
 
-    // At the peak the chrome steps aside with the handle; the readout returns in act 5.
-    var quiet = (idx === 3 && T.c > 0.01) || idx === 5;
-    if (readouts[0] && readouts[0].__q !== quiet) { readouts[0].__q = quiet; readouts[0].classList.toggle('is-quiet', quiet); }
-
     if (idx !== lastIdx) {
       lastIdx = idx;
-      var name = acts[idx].getAttribute('data-act-name') || '';
-      readouts.forEach(function (r) {
-        if (r.textContent === name) return;
-        r.classList.add('is-swapping');
-        setTimeout(function () { r.textContent = name; r.classList.remove('is-swapping'); }, 140);
-      });
+      // Progress ruler: every act up to the one in view is filled.
+      ticks.forEach(function (t, i) { t.classList.toggle('is-on', i <= idx); });
       if (grip) grip.classList.toggle('is-off', !handleAllowed() || !fineMQ.matches);
     }
 
@@ -182,12 +186,14 @@
     addEventListener('pointerup', up);
     addEventListener('pointercancel', up);
 
-    // Keyboard: arrows move the seam in 5% steps, Escape lets go.
+    // Keyboard: arrows move the seam in 5% steps, Home and End go to the limits, Escape lets go.
     grip.addEventListener('keydown', function (e) {
       if (!handleAllowed()) return;
       var step = 0;
       if (e.key === 'ArrowLeft') step = -0.05;
       else if (e.key === 'ArrowRight') step = 0.05;
+      else if (e.key === 'Home') step = MIN - 2;
+      else if (e.key === 'End') step = 2;
       else if (e.key === 'Escape') { release(); return; }
       if (!step) return;
       e.preventDefault();
