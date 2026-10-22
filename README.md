@@ -16,3 +16,17 @@ The source for [jamarimyers.com](https://jamarimyers.com) lives in `site/`, buil
 - jamari@osmoperformance.com
 - [osmoperformance.com](https://osmoperformance.com)
 - [LinkedIn](https://www.linkedin.com/in/jamari-myers/)
+
+### Maintaining the site
+- Copy and facts: `scrollcraft/builds/jamarimyers/CONTENT.md` is the source of truth; `COPY.md` holds the final lines.
+- The status line in `site/index.html` carries a month ("Status, October 2026"). Update it whenever the status changes.
+- Verify after any change (needs Node, a Chromium binary and `npm i playwright-core`):
+  ```bash
+  node .claude/skills/scroll-craft/scripts/serve.mjs --root site --port 4500 &
+  node .claude/skills/scroll-craft/scripts/shoot.mjs --url http://127.0.0.1:4500 --out scrollcraft/lab/desktop
+  node .claude/skills/scroll-craft/scripts/shoot.mjs --url http://127.0.0.1:4500 --out scrollcraft/lab/mobile --width 390 --height 844
+  node .claude/skills/scroll-craft/scripts/shoot.mjs --url http://127.0.0.1:4500 --out scrollcraft/lab/reduced --reduced-motion
+  ```
+  Then read `sheet.png` in each folder. The harness reports dead scroll, cues that never reach full opacity, and contrast.
+- Deploy: enable GitHub Pages (Settings, Pages, Source: GitHub Actions) and merge to `main`. The workflow publishes `site/`.
+- Reference sites: `.claude/skills/reverse-engineer` captures any URL into design notes and a scroll strip.

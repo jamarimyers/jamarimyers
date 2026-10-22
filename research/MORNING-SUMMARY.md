@@ -61,7 +61,22 @@ is the Osmo facts and a three-photo "Elsewhere" strip. Act 6 is "Write to me." w
   short phones, print stylesheet on the resume, Open Graph image.
 - Not verified: a real iPhone (Safari masks, touch feel), a screen reader pass, Lighthouse.
 
-## Next loops (running while you sleep, in order)
-1. Fresh-eyes polish pass (athletic director on a phone, investor on a desktop), handle
-   discoverability, resume and connect copy pass, Lighthouse.
-2. Anything the polish pass finds, then a final commit.
+## Polish pass (done, 11:40 UTC)
+Two cold readers, a copy editor and a performance engineer looked at the finished site; skeptics
+refuted 6 of 21 proposals and 15 were applied:
+- Act 3 is now in your own voice, first person and past tense ("Every morning I knew my recovery
+  score. It arrived with strain and sleep quality, and no context.").
+- The status line is dated ("Status, October 2026"), the one trust signal the page can add
+  without user counts. Change the month whenever the status changes.
+- On phones, act 4 no longer replays the whole hero before the collapse (readers thought they had
+  scrolled back to the top). Dragging the seam no longer exposes the photo box edges or leaves a
+  focus ring on the handle.
+- Connect and resume copy tightened; the Professional path no longer invites recruiting.
+- Lighthouse (mobile / desktop): home 97 / 100 performance with gzip, 96 accessibility (one axe
+  false positive on a clipped label), 100 best practices, 100 SEO; resume and connect all 100s.
+Refused on purpose: a "book a demo" ask on the close (the personal site sells the founder,
+osmoperformance.com sells the product), a scroll cue for the seam, and a minified dist step.
+
+What the cold readers said, unprompted: the athletic director would reply to an email but wanted
+to know what you want from them (answered by connect.html); the investor called the founder-market
+fit "real but only implied" until act 3 went first person, and said nothing reads as inflated.
