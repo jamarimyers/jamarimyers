@@ -9,7 +9,9 @@ Nothing about investors, pilots, pricing, fundraising, GPA, phone, address.
 - Brown University, Class of 2027. B.A. Business Economics, Entrepreneurship track.
 - Former Division I football player, Brown Bears, defensive back (Aug 2023 to Jan 2025).
   Stopped playing after sophomore year. 2024: 5 games, 4.0 tackles, 1 pass breakup (brownbears.com).
-  NEVER print a jersey number: the roster says 32, the supplied photos show 21 and 22.
+  NEVER print a jersey number in copy: the roster says 32, the supplied photos show 21 and 22.
+  A number visible inside a photograph is fine; photographs are not claims and must not be
+  cropped, blurred or swapped to hide it.
 - From Allen, Texas. St. Paul's School (Concord, NH), Class of 2023.
   2022 First Team All-Evergreen Conference, All-NEPSAC Honorable Mention.
 - Investment Banking Summer Analyst, J.P. Morgan, New York, summers 2025 and 2026.
