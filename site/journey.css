@@ -11,11 +11,3 @@
 .tl__links{display:flex;flex-wrap:wrap;gap:0 28px;margin-top:16px}
 @media (max-width:859px){.tl__figs{gap:12px 28px}}
 
-/* site.css extends the rail by the row's 48px (phone 32px) padding, but the
-   quiet row pads 96px (phone 64px), which left a gap in the rail above and
-   below Stopping. Match the extension to the quiet padding. */
-.tl--quiet .tl__rail::before{top:-96px;bottom:-96px}
-@media (max-width:859px){.tl--quiet .tl__rail::before{top:-64px;bottom:-64px}}
-
-/* next door: stack "Next" over the pillar name (the spans are inline) */
-.next__copy>span{display:block}

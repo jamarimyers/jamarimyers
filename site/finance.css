@@ -31,17 +31,7 @@
 .fin-aside .btn{margin-top:24px}
 @media (max-width:859px){.fin-aside{margin-top:32px;padding:24px}}
 
-/* Local patches for two shared-component defects (site.css is frozen; reported upstream):
-   1. .next__copy holds two inline spans, so "Next" and the pillar name ran together on
-      one line. Stack them as DESIGN.md section 6 draws it.
-   2. .ledger aligns dt and dd on their baselines, which offsets the two boxes, so the
-      dt and dd hairlines sat at different heights. Stretch the row and give dt the dd
-      line box, so the hairlines meet and the text still sits on one line. */
-.next__copy>span{display:block}
-@media (min-width:860px){
-  .ledger{align-items:stretch}
-  .ledger>dt{line-height:1.753rem;padding-top:22px;padding-bottom:18px}
-}
+/* the ledger beside its prose takes a narrower label column */
 @media (min-width:860px) and (min-aspect-ratio:1/1){
   .fin-split .ledger{grid-template-columns:minmax(8rem,11rem) 1fr}
 }

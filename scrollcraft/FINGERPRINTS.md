@@ -29,6 +29,7 @@ changes only grammar and world will fail it.
 | Build | Grammar | Nav treatment | Hero device | Act-sequence shape | Close pattern | Signature move | World | Port |
 |---|---|---|---|---|---|---|---|---|
 | jamarimyers.com (2026-10-22) | Split stage | divider-as-chrome with side labels and progress | 50/50 dual-ground split, name across seam | pin 1.6, reveal (flow, about 1.5), pin 2.4 (quiet), pin 3.2 (collapse), flow (about 1.9), pin 1.2: 6 acts, about 11.7vh at 1440x900 | divider collapses, CTA in winning column | draggable handle that scroll takes over at the peak | typographic plus two portraits, duotone to full colour at the peak | desktop and phone art-directed separately |
+| jamarimyers.com v2 (2026-10-23) | chaptered index with doors | fixed 56px bar, wordmark, five links, Connect button, details menu on phones | atmospheric type on smoke, name assembles word by word | flow hero, pin 2.0 x3, flow stats row, pin 2.6, flow spotlight, flow close: about 11.8vh | running-text email, footer inside | the door: each chapter's photo grows to full bleed and morphs into the pillar page hero via cross-document view transitions | the owner's own photography, navy duotone to colour at the peak | desktop and phone art-directed separately, portrait tablets take the phone layout |
 
 ---
 

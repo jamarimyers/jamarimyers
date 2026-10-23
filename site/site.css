@@ -87,10 +87,11 @@ em{font-style:italic}
 
 /* -------------------------------------------------------------- text links -- */
 .tlink{display:inline-flex;align-items:center;min-height:44px;font:500 .75rem/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--text);text-decoration:underline;text-decoration-color:var(--border-strong);text-decoration-thickness:1px;text-underline-offset:.5em;transition:color 160ms var(--ease),text-decoration-color 160ms var(--ease)}
-.prose a{color:var(--text);text-decoration-color:var(--accent);text-underline-offset:.22em;transition:text-decoration-color 160ms var(--ease)}
+/* :where() keeps this at (0,0,1), so .btn--primary and .tlink inside prose keep their own colours */
+:where(.prose) a{color:var(--text);text-decoration-color:var(--accent);text-underline-offset:.22em;transition:text-decoration-color 160ms var(--ease)}
 @media (hover:hover) and (pointer:fine){
   .tlink:hover{color:var(--white);text-decoration-color:var(--accent-2)}
-  .prose a:hover{text-decoration-color:var(--accent-2)}
+  :where(.prose) a:hover{text-decoration-color:var(--accent-2)}
 }
 
 /* ---------------------------------------------------------------- buttons -- */
@@ -181,8 +182,10 @@ em{font-style:italic}
 .door{position:absolute;z-index:var(--z-door);display:block;color:var(--white);text-decoration:none;--door-grow:0;--door-origin:50% 50%}
 .door__media{position:absolute;inset:0;overflow:hidden;border-radius:var(--r);transform-origin:var(--door-origin);transform:scale(calc(1 + var(--door,0) * var(--door-grow)))}
 .door__img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;view-transition-class:door}
-.door__scrim{position:absolute;left:0;bottom:0;width:min(100%,18rem);height:7rem;background:linear-gradient(to top,rgba(10,13,18,.8),transparent);opacity:var(--door,0);pointer-events:none;border-bottom-left-radius:var(--r)}
-.door__label{position:absolute;left:16px;bottom:16px;color:var(--white);opacity:var(--door,0)}
+/* The scrim and label are fixed to the viewport corner: they only become visible as the door
+   fills the screen, so the corner of the viewport is the corner of the photo by then. */
+.door__scrim{position:fixed;left:0;bottom:0;width:min(100vw,28rem);height:9rem;background:linear-gradient(to top,rgba(10,13,18,.78),transparent);opacity:var(--door,0);pointer-events:none}
+.door__label{position:fixed;left:var(--gutter,1.25rem);bottom:var(--gutter,1.25rem);color:var(--white);opacity:var(--door,0);text-shadow:0 1px 2px rgba(10,13,18,.6)}
 .door:focus-visible{outline-offset:4px;z-index:calc(var(--z-door) + 1)}
 .door:focus-visible :is(.door__label,.door__scrim){opacity:1}
 @media (hover:hover) and (pointer:fine){.door:hover :is(.door__label,.door__scrim){opacity:1}}
@@ -323,6 +326,8 @@ html.is-arrived .pillar-head__copy{transition:opacity 420ms var(--ease) 200ms,tr
 .plate__label{color:var(--text-3)}
 /* quiet plate: no media, one quote */
 .tl--quiet{padding-block:96px}
+/* the rail runs through the row padding, so the quiet row extends it by its own 96px (phone 64px) */
+.tl--quiet .tl__rail::before{top:-96px;bottom:-96px}
 .tl--quiet blockquote{font:400 clamp(1.8rem,3vw,2.75rem)/1.2 var(--serif);letter-spacing:-.01em;color:var(--text);max-width:30ch;text-wrap:balance}
 /* crops for the journey photos */
 .pos-field-catch{object-position:75% 40%}
@@ -338,11 +343,13 @@ html.is-arrived .pillar-head__copy{transition:opacity 420ms var(--ease) 200ms,tr
   .plate{max-width:14rem}
   .tl__media--pair{gap:8px;grid-template-columns:repeat(2,minmax(0,1fr));max-width:20rem;width:100%}
   .tl--quiet{padding-block:64px}
+  .tl--quiet .tl__rail::before{top:-64px;bottom:-64px}
 }
 
 /* partner cards */
 .partners{display:grid;grid-template-columns:1.35fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border)}
-.partner{display:flex;flex-direction:column;align-items:flex-start;background:var(--bg);padding:48px;transition:background-color 180ms var(--ease)}
+/* the transition restates the engine's reveal (opacity, transform) so a staggered card still fades in */
+.partner{display:flex;flex-direction:column;align-items:flex-start;background:var(--bg);padding:48px;transition:opacity 620ms var(--ease),transform 620ms var(--ease),background-color 180ms var(--ease)}
 .partner--feature{grid-row:span 2}
 .partner__type{color:var(--text-2)}
 .partner h3{margin-top:12px;font:500 1.0625rem/1.4 var(--sans);color:var(--text)}
@@ -352,6 +359,7 @@ html.is-arrived .pillar-head__copy{transition:opacity 420ms var(--ease) 200ms,tr
 .partner .tlink{margin-top:auto;padding-top:16px}
 .partner:focus-within{position:relative;z-index:1}
 @media (hover:hover) and (pointer:fine){.partner:hover{background:var(--surface)}}
+@media (prefers-reduced-motion:reduce){.partner{transition-duration:220ms,0ms,180ms}}
 @media (max-width:859px){
   .partners{grid-template-columns:1fr}
   .partner--feature{grid-row:auto}
@@ -362,7 +370,9 @@ html.is-arrived .pillar-head__copy{transition:opacity 420ms var(--ease) 200ms,tr
 
 /* gallery of eight */
 .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--border);border:1px solid var(--border);list-style:none;margin:0;padding:0}
-.gallery__item{background:var(--bg);margin:0}
+/* a caption with no second line still fills its cell, so the hairline background does not show under it */
+.gallery>li{display:flex}
+.gallery__item{flex:1 1 auto;background:var(--bg);margin:0}
 .gallery__media{aspect-ratio:3/4;overflow:hidden}
 .gallery__media img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 50%;transition:transform 280ms var(--ease)}
 .gallery__item figcaption{padding:12px 16px 20px}
@@ -381,6 +391,12 @@ html.is-arrived .pillar-head__copy{transition:opacity 420ms var(--ease) 200ms,tr
 .ledger>:nth-last-child(-n+2){border-bottom:1px solid var(--border)}
 .ledger>dt{color:var(--text-2)}
 .ledger>dd{color:var(--text)}
+/* baseline alignment offsets the dt and dd boxes, so their hairlines would sit at
+   different heights; stretch the row and give the dt the dd's first line box */
+@media (min-width:860px){
+  .ledger{align-items:stretch}
+  .ledger>dt{line-height:1.753rem;padding-top:22px;padding-bottom:18px}
+}
 @media (max-width:859px){
   .ledger{grid-template-columns:1fr}
   .ledger>dt{padding:16px 0 4px}
@@ -406,6 +422,7 @@ html.is-arrived .pillar-head__copy{transition:opacity 420ms var(--ease) 200ms,tr
 [data-door="journey"].next__door .door__img{object-position:55% 12%}
 .next__scrim{position:absolute;inset:0;background:radial-gradient(90% 80% at 0% 100%,rgba(10,13,18,.82),transparent 70%);pointer-events:none}
 .next__copy{position:absolute;left:32px;bottom:32px;right:32px}
+.next__copy>span{display:block}
 .next__copy .t-label{color:var(--white)}
 .next__copy .t-section{margin-top:8px}
 .next__connect{display:flex;flex-direction:column;justify-content:space-between;padding:32px;background:var(--surface-2);color:var(--text);text-decoration:none;transition:background-color 180ms var(--ease)}

@@ -27,8 +27,9 @@ Nothing about investors, pilots, pricing, fundraising, GPA, phone, address.
 - Fellowships: Roark Capital Investment Fellow; SEO Career (AIIB); Make-A-Play Foundation King's Court Fellow.
 - Languages: Mandarin (intermediate), Italian (elementary). Semester in Rome.
 - Creator work: the old site's figures (2.1M+ views, 980K reach, 6.6% engagement, 16 countries)
-  were a dated 60-day snapshot with no as-of date. Do not publish any of them. The only
-  creator figure allowed is "four brand partnerships" negotiated during a semester in Rome.
+  were a dated 60-day snapshot. Jamari's ruling on 2026-10-23: they may appear once per page as a
+  dated, self-reported line ("as of [DATE]", date and figures confirmed by him before publish).
+  "Four brand partnerships" from the Rome semester stays the one undated creator figure.
 - Interests: boxing, meditation and journaling, applied AI, sports technology, human performance.
 - Contact: jamari@osmoperformance.com (verified active mailbox). The old site's contact@jamarimyers.com is unverified.
 - Do not use: "first-gen" (old site used it; owner approval of phrasing pending), "cornerback",
