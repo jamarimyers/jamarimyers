@@ -1,0 +1,46 @@
+/* osmo.html only. Three pieces site.css does not carry: the pull line, the
+   three-step morning, and the four research figures. Tokens only; hairline
+   grids follow the stats row (gap:1px over --border). */
+
+/* pull line: the locked belief line, serif, set off by a hairline */
+.osmo-pull{margin-top:48px;padding-left:24px;border-left:1px solid var(--border-strong);max-width:24ch}
+
+/* how a morning works: three steps, an ordered list */
+.osmo-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--border);border:1px solid var(--border);list-style:none;margin:0;padding:0}
+.osmo-steps>li{background:var(--bg);padding:32px;transition:background-color 180ms var(--ease)}
+.osmo-steps h3{color:var(--accent-2)}
+.osmo-steps .t-body{margin-top:12px}
+.osmo-after{margin-top:24px}
+@media (hover:hover) and (pointer:fine){.osmo-steps>li:hover{background:var(--surface)}}
+
+/* research figures: counters with ghosts, captions carry n=48 */
+.osmo-figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--border);border:1px solid var(--border);list-style:none;margin:40px 0 0;padding:0}
+.osmo-figs>li{background:var(--bg);padding:32px;transition:background-color 180ms var(--ease)}
+.osmo-figs .t-label{margin-top:12px;max-width:30ch}
+/* a sample size stays lowercase n inside the uppercase caption */
+.osmo-n{text-transform:none}
+@media (hover:hover) and (pointer:fine){.osmo-figs>li:hover{background:var(--surface)}}
+
+/* role line inside the ledger */
+.osmo-role{font:400 1.5rem/1.25 var(--serif);letter-spacing:-.005em;color:var(--text)}
+.osmo-role em{color:var(--accent-2)}
+.ledger>dd>*+*{margin-top:8px}
+.ledger>dd>.tlink{margin-top:4px}
+/* site.css aligns the ledger on baselines, which drops each dt hairline below
+   its dd hairline when the dd holds blocks; stretch the pair and pad the label down */
+@media (min-width:860px){.ledger{align-items:stretch}.ledger>dt{padding-top:28px}}
+
+/* site.css gives .next__copy .t-section a margin-top but leaves both spans
+   inline, so "Next" and the pillar name sit on one line; stack them */
+.next__copy>span{display:block}
+
+@media (max-width:859px){
+  .osmo-pull{margin-top:32px;padding-left:16px}
+  .osmo-steps{grid-template-columns:1fr}
+  .osmo-steps>li{padding:24px 20px}
+  .osmo-figs{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:32px}
+  .osmo-figs>li{padding:20px 16px}
+}
+@media (max-width:379px){
+  .osmo-figs{grid-template-columns:1fr}
+}

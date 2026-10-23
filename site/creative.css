@@ -1,0 +1,54 @@
+/* ==========================================================================
+   creative.css: creative.html only. Loads after site.css.
+   Holds the few spacing rules the shared partner and gallery components do
+   not carry: the testimonial intro, the card description line, the gap
+   above the gallery, and the reveal transition on the partner cards (the
+   card's own background transition in site.css would otherwise replace the
+   engine's opacity and transform transition, and the stagger would snap).
+   ========================================================================== */
+
+/* testimonial intro, between the section head and the cards */
+.cr-intro{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);align-items:end;margin-bottom:48px}
+.cr-intro__head{grid-column:1/span 6}
+.cr-intro>.t-body{grid-column:8/span 5}
+.cr-intro__head .t-label{color:var(--accent-2)}
+.cr-intro__title{margin-top:12px;font:400 clamp(1.5rem,2.2vw,2rem)/1.15 var(--serif);letter-spacing:-.01em;color:var(--white);text-wrap:balance}
+.cr-intro__title em{color:var(--accent-2)}
+
+/* the card's one-line description, under the partner name */
+.partner__desc{margin-top:12px;font-size:.9375rem;line-height:1.6}
+
+/* reveal transition kept alongside the card hover */
+.partners[data-sc-stagger]>.partner{transition:opacity 620ms var(--ease),transform 620ms var(--ease),background-color 180ms var(--ease)}
+
+/* desktop: the feature card spans both rows, so its quote, cite and link
+   settle at the foot and the label and name hold the top */
+@media (min-width:860px){
+  .partner--feature blockquote{margin-top:auto;padding-top:48px}
+  .partner--feature .tlink{margin-top:0}
+}
+
+/* the gallery intro sits a little further from the grid */
+.cr-lead{margin-bottom:40px}
+
+/* the inquiry button sits outside .prose, whose link colour would
+   otherwise override .btn--primary */
+.cr-cta{margin-top:32px}
+
+/* a caption with no second line still fills its cell, so the hairline
+   grid's background does not show under it */
+.gallery>li{display:flex}
+.gallery>li>.gallery__item{flex:1 1 auto}
+
+@media (max-width:859px){
+  .cr-intro{display:block;margin-bottom:32px}
+  .cr-intro>.t-body{margin-top:16px}
+  .cr-lead{margin-bottom:28px}
+  .cr-cta{margin-top:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  .partners[data-sc-stagger]>.partner{transition-duration:220ms,0ms,180ms}
+}
+
+/* next-door label over the pillar name: the spans are inline by default */
+.next__copy>span{display:block}

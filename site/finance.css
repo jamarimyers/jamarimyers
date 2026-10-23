@@ -1,0 +1,47 @@
+/* finance.html only. site.css carries every shared component; this file adds
+   the three pieces the finance page needs and site.css does not have:
+   - .fin-split  prose beside its ledger on desktop, stacked on the phone layout
+   - .figs       a two-up figure row (the stats row is fixed at three columns)
+   - .roll       the fellowship list, three plain names on hairlines
+   - .fin-aside  the gated playbook aside (ships hidden) */
+
+.fin-split{display:grid;row-gap:32px}
+@media (min-width:860px) and (min-aspect-ratio:1/1){
+  .fin-split{grid-template-columns:minmax(0,7fr) minmax(0,5fr);column-gap:clamp(3rem,6vw,7rem);align-items:start}
+}
+
+.figs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin:48px 0 0;padding:0;list-style:none;background:var(--border);border:1px solid var(--border)}
+.figs__cell{background:var(--bg);padding:32px 40px;transition:background-color 180ms var(--ease)}
+.figs__cell .t-label{margin-top:8px;max-width:30ch}
+@media (hover:hover) and (pointer:fine){.figs__cell:hover{background:var(--surface)}}
+@media (max-width:859px){
+  .figs{margin-top:32px}
+  .figs__cell{padding:20px 16px}
+}
+@media (max-width:379px){.figs{grid-template-columns:1fr}}
+
+.roll{list-style:none;margin:0;padding:0;max-width:52rem}
+.roll>li{display:flex;align-items:baseline;gap:20px;padding-block:24px;border-top:1px solid var(--border);font:400 clamp(1.375rem,1rem + 1.2vw,1.875rem)/1.25 var(--serif);letter-spacing:-.005em;color:var(--text);text-wrap:balance}
+.roll>li:last-child{border-bottom:1px solid var(--border)}
+.roll>li::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--accent);transform:translateY(-.25em)}
+@media (max-width:859px){.roll>li{gap:14px;padding-block:18px}}
+
+.fin-aside{margin-top:48px;max-width:52rem;padding:32px;background:var(--surface);border:1px solid var(--border)}
+.fin-aside .t-body{margin-top:16px}
+.fin-aside .btn{margin-top:24px}
+@media (max-width:859px){.fin-aside{margin-top:32px;padding:24px}}
+
+/* Local patches for two shared-component defects (site.css is frozen; reported upstream):
+   1. .next__copy holds two inline spans, so "Next" and the pillar name ran together on
+      one line. Stack them as DESIGN.md section 6 draws it.
+   2. .ledger aligns dt and dd on their baselines, which offsets the two boxes, so the
+      dt and dd hairlines sat at different heights. Stretch the row and give dt the dd
+      line box, so the hairlines meet and the text still sits on one line. */
+.next__copy>span{display:block}
+@media (min-width:860px){
+  .ledger{align-items:stretch}
+  .ledger>dt{line-height:1.753rem;padding-top:22px;padding-bottom:18px}
+}
+@media (min-width:860px) and (min-aspect-ratio:1/1){
+  .fin-split .ledger{grid-template-columns:minmax(8rem,11rem) 1fr}
+}
