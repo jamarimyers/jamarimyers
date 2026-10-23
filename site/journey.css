@@ -1,0 +1,21 @@
+/* journey.html only. The shared timeline lives in site.css; this file adds
+   the three pieces it does not cover: the 2024 season figures, the serif
+   italic word inside an item heading, and the row of "Enter" links. */
+.tl__body h3 em{font:italic 400 1.15em/1 var(--serif);letter-spacing:0;color:var(--accent-2)}
+.tl__body>p+p{margin-top:1em}
+.tl__season{margin-top:28px}
+.tl__season>.t-label{color:var(--text-3)}
+.tl__figs{display:flex;flex-wrap:wrap;gap:16px 40px;list-style:none;margin:12px 0 0;padding:16px 0 0;border-top:1px solid var(--border)}
+.tl__figs li{display:flex;flex-direction:column;gap:6px}
+.tl__fig{font:400 clamp(2rem,1.4rem + 1.6vw,2.75rem)/1 var(--serif);letter-spacing:-.01em;color:var(--white)}
+.tl__links{display:flex;flex-wrap:wrap;gap:0 28px;margin-top:16px}
+@media (max-width:859px){.tl__figs{gap:12px 28px}}
+
+/* site.css extends the rail by the row's 48px (phone 32px) padding, but the
+   quiet row pads 96px (phone 64px), which left a gap in the rail above and
+   below Stopping. Match the extension to the quiet padding. */
+.tl--quiet .tl__rail::before{top:-96px;bottom:-96px}
+@media (max-width:859px){.tl--quiet .tl__rail::before{top:-64px;bottom:-64px}}
+
+/* next door: stack "Next" over the pillar name (the spans are inline) */
+.next__copy>span{display:block}
