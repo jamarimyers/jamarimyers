@@ -1,10 +1,12 @@
 /* ==========================================================================
    creative.css: creative.html only. Loads after site.css.
-   Holds the few spacing rules the shared partner and gallery components do
-   not carry: the testimonial intro, the card description line, the gap
-   above the gallery, and the reveal transition on the partner cards (the
-   card's own background transition in site.css would otherwise replace the
-   engine's opacity and transform transition, and the stagger would snap).
+   Holds what the shared partner, gallery and next-door components do not
+   carry: the testimonial intro, the card description line, the feature
+   card's bottom-anchored quote, the reveal transition on the partner cards
+   (site.css gives .partner its own background transition, which would
+   replace the engine's opacity and transform transition and snap the
+   stagger), the gallery intro gap, the inquiry button outside .prose, a
+   full-height gallery cell, and block spans in the next-door copy.
    ========================================================================== */
 
 /* testimonial intro, between the section head and the cards */
