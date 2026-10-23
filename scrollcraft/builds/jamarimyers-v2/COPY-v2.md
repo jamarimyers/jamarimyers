@@ -1,6 +1,6 @@
 # COPY v2: jamarimyers.com, chaptered index with doors
 
-Draft for build, 2026-10-23. Structure follows /root/.claude/plans/twinkly-tickling-hellman.md. Every figure is traced in the table at the end. Not cleared for publication: the publish gates and every [CONFIRM] below need Jamari's written answer, and a fact check against the sources is still to run.
+Draft for build, 2026-10-23. Structure follows /root/.claude/plans/twinkly-tickling-hellman.md. Every figure is traced in the table at the end. Not cleared for publication: the publish gates and every [CONFIRM] below need Jamari's written answer, and the fact check against CONTENT.md, POSITIONING.md, JAMARI.md and the old site ran on 2026-10-23.
 
 ## How to read this file
 
@@ -36,7 +36,7 @@ Labels, and how far each one goes:
 
 Chronology the copy holds to: Allen, Texas. St. Paul's School, Class of 2023 (2022 honors). Brown, Division I football, August 2023 to January 2025, stopped after sophomore year. Finance summers 2024 (Decatur Street Capital), 2025 and 2026 (J.P. Morgan), campus roles 2024 onward. Semester in Rome and the four partnerships (term unconfirmed). Osmo: research fall 2025, founder 2026 (incorporation year unconfirmed). No sentence sequences two of these unless the order above is certain.
 
-Sentence rules: one idea per sentence, a full sentence before any list, numbers as figures, sentence-case headings. No em or en dashes. No "not X, but Y" (one plan-fixed exception, flagged on the creative page). No three-part slogans (one gated exception on the home hero). No stacked one-line fragments, poster lines, superlatives or filler verbs. "Emotional performance" appears only inside the approved Osmo platform and belief lines, and the mechanism always follows it.
+Sentence rules: one idea per sentence, a full sentence before any list, numbers as figures, sentence-case headings. No em or en dashes. No repeated "not X, but Y" in marketing copy (orchestrator ruling, 2026-10-23). Jamari's own contrast sentences stay, each at most once on the site and never two in one section: voice anchor 2 (osmo, Origin), voice anchor 1 (journey, Stopping), voice anchor 3 (journey, What it taught me) and "Structured deals, not handshake agreements" (creative, What it taught me). No three-part slogans (one gated exception on the home hero). No stacked one-line fragments, poster lines, superlatives or filler verbs. "Emotional performance" appears only inside the approved Osmo platform and belief lines, and the mechanism always follows it.
 
 CTA verbs, one meaning each: "Enter" opens a pillar (doors). "Email Jamari" opens a mailto. "Visit" leaves for osmoperformance.com. "Connect" goes to connect.html. "Back to the start" is the 404 return.
 
@@ -116,7 +116,7 @@ As Sponsorship Chair of BLK Capital Management, I work on partnerships across 30
 
 At Black in Business at Brown I was Chair of Finance and the club's financial signatory. {draft; facts CONTENT.md L24-25}
 
-FIGURE: 30+ / financial-services firms in BLK Capital partnerships {plan L23; CONTENT.md L22-23}
+FIGURE: 30+ / financial-services firms in BLK Capital partnerships {plan L23; CONTENT.md L22}
 
 Door: [BUTTON: Enter Finance -> finance.html] [ALT: ""] {plan L32}
 
@@ -133,9 +133,9 @@ Four deals, zero missed *deliverables*. {plan L24; owner-adapted: old-site L542,
 
 I spent a semester in Rome and negotiated four brand partnerships while I was there. {v1: COPY.md L65}
 
-I delivered the content on schedule and earned testimonials from the operators I worked with. {owner-adapted: old-site L462 and L542; first person, "real operators" cut}
+I delivered the content on schedule and earned testimonials from operators I worked with. {owner-adapted: old-site L462 and L542; first person, "real" cut, and "the" dropped because the old site shows three testimonials for four partners}
 
-FIGURE: 4 / brand partnerships, Italy and Sardinia {plan L24; CONTENT.md L30-31; old-site L436}
+FIGURE: 4 / brand partnerships, Italy and Sardinia {plan L24; CONTENT.md L30-31; old-site L435-436}
 
 Door: [BUTTON: Enter Creative -> creative.html] [ALT: ""] {plan L32}
 
@@ -159,13 +159,13 @@ Silence beat (first 0.3 of the span, ground only): [LABEL: 04 Journey] {plan L26
 
 Allen, Texas to *here*. {plan L26}
 
-I grew up in Allen, Texas and graduated from St. Paul's School in New Hampshire in 2023. {draft; facts CONTENT.md L15} [CONFIRM: "grew up" in Allen; the source says only "from Allen, Texas"]
+I'm from Allen, Texas, and I went to St. Paul's School in Concord, New Hampshire, Class of 2023. {draft; facts CONTENT.md L15} [CONFIRM: the line now says "from Allen, Texas", the sourced wording; tell me if "grew up" is true and you want it]
 
 I played defensive back at Brown from August 2023 to January 2025. {draft; facts CONTENT.md L10}
 
 I stopped after my sophomore year and kept thinking about something I had noticed while I was still inside it. {owner-adapted: CONTENT.md L55-56; shortened, "not the game but" removed (contrast ban)}
 
-After football I spent a semester in Rome, and the travel kept going from there. {draft} [CONFIRM: the Rome term, and that it came after you stopped playing]
+I also spent a semester in Rome, enrolled full time. {owner-adapted: old-site L462, first person; "After football" and "the travel kept going from there" cut because the sources do not give the order} [CONFIRM: the Rome term, and whether it came after you stopped playing]
 
 FIGURE: 16 / countries, 11 in one semester {plan L26; old-site L430-431} [GATE] [CONFIRM: 16 countries and 11 in one semester; CONTENT.md L29-30 says not to publish it]
 
@@ -179,13 +179,13 @@ What I am building *now*. {draft}
 
 [LABEL: What it is] Osmo is an emotional performance platform for college athletes, sold to athletic departments. {approved: CONTENT.md L39}
 
-[LABEL: How it works] Each athlete gets a short morning check-in, optional wearable context and one next move for today. {approved: CONTENT.md L40, made a sentence; v1: COPY.md L57}
+[LABEL: How it works] Each athlete gets a short morning check-in, optional wearable context, one next move for today. {approved: CONTENT.md L40, the list verbatim after the lead-in "Each athlete gets"}
 
-[LABEL: Built for honest answers] Athletes choose what is shared. Coaches see a simple readiness label, never journals or raw biometrics. {approved: CONTENT.md L42-43}
+[LABEL: Built for honest answers] Athletes choose what is shared; coaches see a simple readiness label, never journals or raw biometrics. {approved: CONTENT.md L42-43, verbatim from "athletes", first letter capitalized}
 
-[LABEL: Status] App built; in release testing with early athletes, as of [DATE]. {approved: CONTENT.md L50; plan L27} [GATE] [CONFIRM: the status date, backed by a dated TestFlight screenshot (POSITIONING.md L73)]
+[LABEL: Status] App built; in release testing with early athletes, as of [DATE]. {approved: CONTENT.md L50 verbatim; ", as of [DATE]" appended per plan L27} [GATE] [CONFIRM: the status date, backed by a dated TestFlight screenshot (POSITIONING.md L73)]
 
-[LABEL: Stack] TypeScript, React Native, Expo, Node.js and Supabase. {approved: CONTENT.md L44}
+[LABEL: Stack] TypeScript, React Native, Expo, Node.js, Supabase. {approved: CONTENT.md L44 verbatim}
 
 [BUTTON: Visit osmoperformance.com -> https://osmoperformance.com/] {plan L27}
 
@@ -205,7 +205,7 @@ Jamari Myers, Brown University ’27, 2026 {v1: COPY.md L73}
 
 Title: Building Osmo, Jamari Myers
 
-Meta description: Osmo is an emotional performance platform for college athletes, sold to athletic departments: a short morning check-in and one next move for today. {approved: CONTENT.md L39-40}
+Meta description: Osmo is an emotional performance platform for college athletes, sold to athletic departments: a short morning check-in and one next move for today. {draft; CONTENT.md L39 verbatim up to the colon, then L40 shortened ("optional wearable context" dropped) to stay under 160 characters}
 
 ### Pillar header
 
@@ -221,11 +221,11 @@ Osmo gives college athletes a short morning check-in and one next move for the d
 
 Something I noticed while I was still *inside it*. {owner-adapted: CONTENT.md L56}
 
-I stopped playing Division I football after my sophomore year at Brown, and the thing that stayed with me was something I had noticed while I was still inside it. {owner-adapted: CONTENT.md L55-56; "not the game but" removed (contrast ban)}
+I stopped playing Division I football after my sophomore year at Brown, and the thing that stayed with me was something I had noticed while I was still inside it. {owner-adapted: CONTENT.md L55-56; "not the game but" removed so this section holds one contrast; the verbatim anchor runs once, on journey Stopping}
 
-Recovery scores, strain, sleep quality, all of it arrived every morning without context. A low number produced another thing to worry about before practice had even started. {owner-adapted: CONTENT.md L57-59; "did not produce a better decision. It" removed (contrast ban)}
+Recovery scores, strain, sleep quality, all of it arrived every morning without context. A low number did not produce a better decision. It produced another thing to worry about before practice had even started. {owner: CONTENT.md L57-59; verbatim, restored per the orchestrator ruling; the one contrast in this section}
 
-Every morning I knew my recovery score. Nobody gave me anything for the mornings I woke up flat before a game. So I started building the step that was missing. {owner: CONTENT.md L64-65; last sentence draft}
+Every morning I knew my recovery score. Nobody gave me anything for the mornings I woke up flat before a game. {owner: CONTENT.md L64-65; verbatim; the draft closing sentence "So I started building the step that was missing" cut, the idea now carried by his POSITIONING.md L90 wording in What it taught me}
 
 ### What it is
 
@@ -239,11 +239,11 @@ Pull line: Physical performance is trained. Emotional performance should be *too
 
 How a morning *works*. {draft}
 
-[LABEL: 01 Check in] Each morning starts with a short check-in. {approved: CONTENT.md L40, made a sentence}
+[LABEL: 01 Check in] Each athlete starts the day with a short morning check-in. {approved: CONTENT.md L40, phrase "a short morning check-in" verbatim; frame draft}
 
 [LABEL: 02 Context] An athlete can connect a wearable for context. Osmo has WHOOP developer access and uses WHOOP-derived data from connected users. {first sentence draft; second approved verbatim: CONTENT.md L48}
 
-[LABEL: 03 One next move] The athlete leaves with one next move for today. {approved: CONTENT.md L40, made a sentence}
+[LABEL: 03 One next move] The athlete leaves with one next move for today. {approved: CONTENT.md L40, phrase "one next move for today" verbatim; frame draft}
 
 Osmo works without a wearable. {approved: CONTENT.md L49}
 
@@ -251,9 +251,9 @@ Osmo works without a wearable. {approved: CONTENT.md L49}
 
 Built for honest *answers*. {approved: CONTENT.md L42}
 
-Athletes choose what is shared. Coaches see a simple readiness label, never journals or raw biometrics. {approved: CONTENT.md L42-43}
+Athletes choose what is shared; coaches see a simple readiness label, never journals or raw biometrics. {approved: CONTENT.md L42-43, verbatim from "athletes", first letter capitalized}
 
-An athlete who expects to be judged on a check-in will not answer it honestly, so the design starts with what the athlete controls. {draft} [CONFIRM: is this your reasoning for the sharing model? Cut it if not]
+[CONFIRM: a draft sentence on why athletes control what is shared ("An athlete who expects to be judged on a check-in will not answer it honestly") was cut because the reasoning is not in the sources; add one in your own words if it is yours]
 
 ### Research
 
@@ -277,13 +277,13 @@ FIGURE: 43% / say what they do now works (n=48, exploratory)
 
 Where it *stands*. {draft}
 
-App built; in release testing with early athletes, as of [DATE]. {approved: CONTENT.md L50} [GATE] [CONFIRM: same date as the home status line]
+App built; in release testing with early athletes, as of [DATE]. {approved: CONTENT.md L50 verbatim; ", as of [DATE]" appended per plan L27} [GATE] [CONFIRM: same date as the home status line]
 
 ### Stack
 
 What it is built *with*. {draft}
 
-Osmo is built with TypeScript, React Native, Expo, Node.js and Supabase. {approved: CONTENT.md L44, made a sentence}
+Osmo is built on this stack: TypeScript, React Native, Expo, Node.js, Supabase. {approved: CONTENT.md L44, the list verbatim after a draft lead-in}
 
 [BUTTON: GitHub -> https://github.com/jamarimyers]
 
@@ -301,9 +301,9 @@ Osmo is built by Stateframe Technologies, Inc., the company I founded. {draft} [
 
 What it taught *me*. {plan L35}
 
-I had been trained to begin with financials and reason backward toward the story. Osmo taught me to begin with the behavior and let the numbers explain it afterward. When I sat down with athletes for the interviews, I had to put the model away and listen to how a morning actually goes for them. The product came out of that order of work, and it is the order I now trust on most problems.
+I had been trained to begin with financials and reason backward toward the story. Osmo taught me to begin with the behavior and let the numbers explain it afterward. In fall 2025 that meant 11 interviews with athletes and staff and a 48-person student-athlete survey. I started Osmo to build the missing step, and I begin most problems with the behavior now.
 
-{owner: CONTENT.md L62-63 for the first two sentences; the rest draft} [CONFIRM: replace the last two sentences with your own if they do not sound like you, and confirm the 11 interviews were with athletes] (75 words)
+{owner-adapted: CONTENT.md L62-63 verbatim for the first two sentences; "I started Osmo to build that missing step" from POSITIONING.md L90, "that" changed to "the"; the third sentence and the closing clause draft, facts CONTENT.md L45-46 and the claim ledger (11 interviews: 8 student-athletes, 3 staff)} [CONFIRM: rewrite the draft sentence and clause in your own words if they miss; the interviews are no longer described as all with athletes, per the claim ledger] (62 words, 37 of them his)
 
 ### Doors
 
@@ -393,9 +393,9 @@ Three *fellowships*. {draft}
 
 What it taught *me*. {plan L36}
 
-At J.P. Morgan I learned to start with the financials and reason backward toward the story. A story only holds if the numbers underneath it hold, so I check the numbers first. BLK Capital taught me the other half of the job: a partnership lasts when the other side gets something it can use. I bring both habits to Osmo, where the first thing a buyer reads is the budget.
+At J.P. Morgan I learned to start with the financials and reason backward toward the story. With Osmo I had to start with the behavior. The financials come with me, because an athletic department reads a budget the way I was trained to. BLK Capital, where I am Sponsorship Chair, taught me relationship management and partnership-building at scale, across 30+ financial-services firms.
 
-{owner: plan L36 and POSITIONING.md L92 for the first sentence; the rest draft} [CONFIRM: rewrite the draft sentences in your own words if they miss] (70 words)
+{owner-adapted: POSITIONING.md L92 verbatim for the first two sentences (plan L36 fixes the first); "relationship management and partnership-building at scale" from old-site L523; the third sentence draft, reasoning from POSITIONING.md L51; role and 30+ from CONTENT.md L21-22. The old draft lines "a partnership lasts when the other side gets something it can use" and "the first thing a buyer reads is the budget" cut as unsourced} [CONFIRM: rewrite the draft sentence in your own words if it misses, and confirm you are still Sponsorship Chair] (62 words, 31 of them his)
 
 ### Doors
 
@@ -524,9 +524,9 @@ From the Sahara at sunrise to the Treasury at Petra to snowboarding in the Balka
 
 What it taught *me*. {plan L37}
 
-Structured deals, not handshake agreements. I negotiate, deliver, and follow through on schedule. In Rome I was asking business owners to trust someone they had never met, and one of them told me they were skeptical at first because of how much influencer outreach they get. What changed their mind was a clear scope, a date, and work that showed up when I said it would. I hold every project to that now.
+Structured deals, not handshake agreements. I negotiate, deliver, and follow through on schedule. I make content built for brand use: ads, websites, and campaigns, backed by real business infrastructure. One partner in Sardinia wrote that they were skeptical at first and checked my work before taking the chance. So the work has to speak first: content the brand could actually use, on the date we agreed.
 
-{owner: plan L37 and old-site L542 for the first two sentences; the rest draft, built on the E-Boats Sardinia testimonial} [CONFIRM: rewrite the draft sentences in your own words if they miss. Note: "Structured deals, not handshake agreements" is the one "not X" contrast left on the site, kept because the plan fixes it] (73 words)
+{owner-adapted: old-site L542 verbatim for the first two sentences (plan L37); the third sentence joins old-site L547 ("Content built for brand use: ads, websites, and campaigns") and L532 ("backed by real business infrastructure") in first person; the fourth paraphrases the E-Boats Sardinia testimonial (old-site L728); the fifth is draft around old-site L705 ("content the brand could actually use"). The old draft claim that "a clear scope, a date" changed the partner's mind was cut: the testimonial says they checked his work} [CONFIRM: rewrite the draft sentences in your own words if they miss. "Structured deals, not handshake agreements" is the owner's line and the only contrast in this section] (66 words, 33 of them his)
 
 ### Doors
 
@@ -550,7 +550,7 @@ Meta description: From Allen, Texas to St. Paul's School, Division I football at
 
 Allen, Texas to *here*. {plan L26}
 
-St. Paul's, two seasons of Division I football at Brown, a semester in Rome, and then a company. {draft}
+St. Paul's, two seasons of Division I football at Brown, a semester in Rome, and a company. {draft; "then" cut because the order of Rome and Osmo is not in the sources}
 
 ### Allen, Texas
 
@@ -558,15 +558,15 @@ St. Paul's, two seasons of Division I football at Brown, a semester in Rome, and
 
 Where it *starts*. {draft}
 
-I'm from Allen, Texas. Everything on this site started there. {draft; fact CONTENT.md L15} [CONFIRM: add one sentence of your own about home, or keep it this short]
+I'm from Allen, Texas. {draft; fact CONTENT.md L15; "Everything on this site started there" cut as unsourced} [CONFIRM: add one sentence of your own about home, or keep it this short]
 
 ### St. Paul's School
 
 [LABEL: St. Paul's School · Concord, New Hampshire · Class of 2023]
 
-Boarding school in New *Hampshire*. {draft} [CONFIRM: you boarded at St. Paul's]
+St. Paul's, in New *Hampshire*. {draft} [CONFIRM: the heading no longer says you boarded, which the sources do not state; tell me if you want it back]
 
-I finished high school at St. Paul's School in Concord, New Hampshire, in 2023. In 2022 I was named First Team All-Evergreen Conference and All-NEPSAC Honorable Mention. {draft; facts CONTENT.md L15-16, Brown roster page via JAMARI.md L15}
+I went to St. Paul's School in Concord, New Hampshire, Class of 2023. In 2022 I was named First Team All-Evergreen Conference and All-NEPSAC Honorable Mention. {draft; facts CONTENT.md L15-16, Brown roster page via JAMARI.md L15}
 
 ### Brown football
 
@@ -596,7 +596,7 @@ FIGURE: 1 / pass breakup
 
 *Stopping*. {draft}
 
-I stopped playing Division I football after my sophomore year at Brown, and the thing that stayed with me was something I had noticed while I was still inside it. {owner-adapted: CONTENT.md L55-56; "not the game but" removed (contrast ban)}
+I stopped playing Division I football after my sophomore year at Brown, and the thing that stayed with me was not the game but something I had noticed while I was still inside it. {owner: CONTENT.md L55-56; verbatim, restored per the orchestrator ruling; its one use on the site and the one contrast in this section}
 
 (Quiet plate, no photo, per plan L38.)
 
@@ -606,9 +606,9 @@ I stopped playing Division I football after my sophomore year at Brown, and the 
 
 The travel was chapter *one*. {owner: old-site L466}
 
-My summers had gone to finance by then: a search fund in 2024, then J.P. Morgan in 2025 and 2026. {draft; facts CONTENT.md L17, L20} [CONFIRM: this sentence assumes Rome came after summer 2025; reorder if not]
+My summers went to finance: a search fund in 2024, then J.P. Morgan in 2025 and 2026. {draft; facts CONTENT.md L17, L20; "had gone ... by then" cut so the line no longer places Rome after the summers} [CONFIRM: the Rome term, and whether it falls between two of these summers]
 
-I spent a semester in Rome, enrolled full time, and negotiated four brand partnerships while I was there. I left with elementary Italian and the habit of putting every deal in writing. {owner-adapted: old-site L462 and v1 COPY.md L65; second clause draft} [CONFIRM: "putting every deal in writing" is true of all four]
+I spent a semester in Rome, enrolled full time, and negotiated four brand partnerships while I was there. I kept every deal structured and in writing, and I followed through on schedule. {owner-adapted: old-site L462 and v1 COPY.md L65 for the first sentence; the second adapted from old-site L542, "Structured deals, not handshake agreements. I negotiate, deliver, and follow through on schedule.", past tense, contrast removed, "in writing" read from "not handshake agreements"; "I left with elementary Italian" cut because the sources do not say you learned it in Rome} [CONFIRM: "in writing" is true of all four deals]
 
 [ALT: Jamari Myers with his arms spread wide inside the Colosseum in Rome, under a cloudy sky.]
 
@@ -618,7 +618,7 @@ I spent a semester in Rome, enrolled full time, and negotiated four brand partne
 
 [LABEL: Osmo · 2026] [CONFIRM: 2026 as the founding year, per the chronology brief; research began fall 2025]
 
-Then I started *building*. {draft}
+Building *Osmo*. {draft; "Then I started building" replaced because the order of Rome and Osmo is not in the sources}
 
 In fall 2025 I ran 11 interviews and a 48-person student-athlete survey. In 2026 I founded Stateframe Technologies, Inc. to build Osmo for college athletes and the departments that support them. {draft; facts CONTENT.md L8, L45-46} [CONFIRM: the founding year]
 
@@ -630,9 +630,9 @@ In fall 2025 I ran 11 interviews and a 48-person student-athlete survey. In 2026
 
 What it taught *me*. {plan L38}
 
-Measurement had been solved. The gap was the intervention layer, the part that tells you what to actually do once you know how you are doing. I only saw it because I had stood in it, before practice, with a number in front of me and nothing to do about it. Everything since, from the desk to Rome, has been practice at finding the missing step and building it.
+The gap was not measurement. Measurement had been solved. The gap was the intervention layer, the part that tells you what to actually do once you know how you are doing. I saw it because I stood in it, before practice, with a number in front of me and nothing to do about it. Football also built the discipline and time management that shows up in every project I take on.
 
-{owner-adapted: CONTENT.md L60-61 for the first two sentences, opening "The gap was not measurement." removed (contrast ban); the rest draft} [CONFIRM: rewrite the draft sentences in your own words if they miss] (69 words)
+{owner-adapted: CONTENT.md L60-61 verbatim for the first three sentences, restored per the orchestrator ruling, its one use on the site and the one contrast in this section; the fourth sentence draft, from CONTENT.md L58-59 and POSITIONING.md L111; the fifth from old-site L454 ("Built the discipline and time management that shows up in every project") in first person. The old draft "Everything since, from the desk to Rome" was cut: the desk began in summer 2024, while you were still playing} [CONFIRM: rewrite the draft sentence in your own words if it misses] (71 words, 43 of them his)
 
 ### Doors
 
@@ -664,9 +664,9 @@ Founder of Osmo and a Business Economics student at Brown University, class of 2
 
 Osmo · Founder, Stateframe Technologies, Inc. · 2026 to present [CONFIRM: start year]
 
-An emotional performance platform for college athletes, sold to athletic departments. It gives each athlete a short morning check-in, optional wearable context and one next move for today. App built; in release testing with early athletes, as of [DATE]. {approved: CONTENT.md L39-40, L50}
+Osmo is an emotional performance platform for college athletes, sold to athletic departments. Each athlete gets a short morning check-in, optional wearable context, one next move for today. App built; in release testing with early athletes, as of [DATE]. {approved: CONTENT.md L39 and L50 verbatim, L40 list verbatim after the lead-in "Each athlete gets"; ", as of [DATE]" per plan L27}
 
-Built with TypeScript, React Native, Expo, Node.js and Supabase. osmoperformance.com {approved: CONTENT.md L44}
+Stack: TypeScript, React Native, Expo, Node.js, Supabase. osmoperformance.com {approved: CONTENT.md L44 verbatim}
 
 ### Experience
 
@@ -736,7 +736,7 @@ Meta description: How to reach Jamari Myers about Osmo for athletic departments,
 
 Write to me at *jamari@osmoperformance.com*. [BUTTON: jamari@osmoperformance.com -> mailto:jamari@osmoperformance.com] {draft; address CONTENT.md L33}
 
-I read every message myself, and the subject line tells me where it goes. {draft} [CONFIRM: you read your own inbox]
+Each button below fills in the subject line for you. {draft; "I read every message myself" cut as unsourced} [CONFIRM: add a line of your own about how you reply, if you want one]
 
 ### Inquiry rows
 
@@ -781,25 +781,25 @@ Status key: verified third party = on a source he does not control; self-reporte
 
 | Number | Page and section | Source file and line | Status |
 |---|---|---|---|
-| ’27 / 2027 (Class of) | index hero fallback, footer (all pages), resume header and education, resume meta | CONTENT.md L9; brownbears.com roster via JAMARI.md L14 | verified third party (concentration); class label self-reported (roster class labels stale, JAMARI.md L23) |
+| ’27 / 2027 (Class of) | index hero fallback and meta, footer (all pages), resume header and education, resume meta | CONTENT.md L9; brownbears.com roster via JAMARI.md L14 | verified third party (concentration); class label self-reported (roster class labels stale, JAMARI.md L23) |
 | 2026 (footer year) | footer, all pages | current year | not a claim |
 | 01, 02, 03, 04 (chapter and step numbers) | index chapters and folio; osmo How it works | plan L29 | not a claim |
-| 48 (surveyed) | index chapter 1; osmo Research; journey Osmo | CONTENT.md L45-46 | self-reported, labeled exploratory |
-| fall 2025 | index chapter 1; osmo Research; journey Osmo | CONTENT.md L45 | self-reported |
-| 11 (interviews) | osmo Research; journey Osmo | CONTENT.md L45 | self-reported |
+| 48 (surveyed) | index chapter 1; osmo Research and What it taught me; journey Osmo | CONTENT.md L45-46 | self-reported, labeled exploratory |
+| fall 2025 | index chapter 1; osmo Research and What it taught me; journey Osmo | CONTENT.md L45 | self-reported |
+| 11 (interviews) | osmo Research and What it taught me; journey Osmo | CONTENT.md L45; claim ledger (orchestrator): 8 student-athletes and 3 staff | self-reported; copy says "11 interviews" or "with athletes and staff", never that all 11 were athletes (POSITIONING.md L91 says "11 student-athletes" and is wrong on this point) |
 | 90% | osmo Research | CONTENT.md L46-47 | self-reported, n=48, exploratory |
-| 43% | osmo Research | CONTENT.md L47 | self-reported, n=48, exploratory |
+| 43% | osmo Research | CONTENT.md L46-47 | self-reported, n=48, exploratory |
 | n=48 | osmo Research | CONTENT.md L47 | self-reported |
-| 2025 and 2026 (J.P. Morgan summers) | index chapter 2 and meta; finance header, J.P. Morgan, meta; journey Rome; resume | CONTENT.md L17 | self-reported (employer can verify; POSITIONING.md L64); confirm firm naming |
+| 2025 and 2026 (J.P. Morgan summers) | index chapter 2 and meta; finance J.P. Morgan label and body, meta; journey Rome; resume and its meta | CONTENT.md L17 | self-reported (employer can verify; POSITIONING.md L64); confirm firm naming |
 | 2024 (Decatur Street Capital) | finance Decatur; journey Rome; resume | CONTENT.md L20 | self-reported |
-| 30+ (firms) | index chapter 2; finance BLK; resume | CONTENT.md L22-23 | self-reported |
+| 30+ (firms) | index chapter 2; finance BLK and What it taught me; resume | CONTENT.md L22 | self-reported |
 | 600+ (responses) | finance BLK; resume | CONTENT.md L23 | self-reported |
 | 2024, 2025 (BLK roles) | finance BLK; resume | CONTENT.md L21-22 | self-reported; confirm still current |
 | 2024 to 2025 (Black in Business) | finance Black in Business; resume | CONTENT.md L24 | self-reported |
 | 7 (founders) | finance Black in Business; resume | CONTENT.md L25 | self-reported |
-| 40 (workshop) | finance Black in Business; resume | CONTENT.md L26 | self-reported |
+| 40 (workshop) | finance Black in Business; resume | CONTENT.md L25-26 | self-reported |
 | 3 (fellowships, as a count in a heading) | finance Fellowships | CONTENT.md L27 | self-reported |
-| 4 (brand partnerships, "four deals", "4 collaborations") | index chapter 3; creative header, Rome, partner note, meta; journey Rome; resume | CONTENT.md L30-31; old-site L436, L462, L675 | self-reported; confirm partner permissions |
+| 4 (brand partnerships, "four deals", "4 collaborations") | index chapter 3; creative header, Rome, partner note, meta; journey Rome; resume | CONTENT.md L30-31; old-site L435-436, L462, L675 | self-reported; confirm partner permissions |
 | zero (missed deliverables) | index chapter 3 title | plan L24; old-site L542 | self-reported; confirm |
 | 100% (delivery rate) | creative partner note | old-site L675 | self-reported; confirm |
 | 2.1M+ (views) | index stats row; creative stats row | old-site L415-416 | self-reported; gate, confirm date and screenshots |
@@ -809,9 +809,11 @@ Status key: verified third party = on a source he does not control; self-reporte
 | as of [DATE] (stats) | index and creative stats labels | plan L25, L37 | confirm |
 | 16 (countries) | index chapter 4; creative gallery heading | old-site L430, L475 | self-reported; gate (CONTENT.md L29-30 bars it until confirmed) |
 | 11 (countries in one semester) | index chapter 4 | old-site L431, L479 | self-reported; gate |
-| 2023 (St. Paul's Class of) | index chapter 4; journey St. Paul's and meta; resume | CONTENT.md L15 | self-reported (brief); St. Paul's attendance on roster, JAMARI.md L15 |
+| 2023 (St. Paul's Class of) | index chapter 4; journey St. Paul's label and body; resume | CONTENT.md L15 | self-reported (brief); St. Paul's attendance on roster, JAMARI.md L15 |
 | 2022 (honors) | journey St. Paul's; resume | CONTENT.md L16; brownbears.com via JAMARI.md L15, L31 | verified third party |
-| August 2023 to January 2025 | index chapter 4; journey header, Brown football, meta; resume | CONTENT.md L10 | self-reported dates; roster confirms 2023 and 2024 seasons (JAMARI.md L32-33) |
+| August 2023 to January 2025 | index chapter 4; journey Brown football label and body, meta (as "2023 to 2025"); resume | CONTENT.md L10 | self-reported dates; roster confirms 2023 and 2024 seasons (JAMARI.md L32-33) |
+| 2 ("two seasons") | journey header and Brown football heading | CONTENT.md L10-11; old-site L454 ("Two years competing at the Division I level"); v1 COPY.md L87 | self-reported dates; roster shows the 2023 season (no game action) and 2024 (5 games), JAMARI.md L32-33 |
+| 3 ("three summers"), "twice" (J.P. Morgan) | finance header | CONTENT.md L17, L20; v1 COPY.md L17, L87 | self-reported; summer 2024 plus summers 2025 and 2026 |
 | 5 (games, 2024) | journey Brown football; resume | CONTENT.md L11; brownbears.com via JAMARI.md L15 | verified third party |
 | 4.0 (tackles, 2024) | journey Brown football; resume | CONTENT.md L11; brownbears.com | verified third party |
 | 1 (pass breakup, 2024) | journey Brown football; resume | CONTENT.md L11; brownbears.com | verified third party |
@@ -820,4 +822,4 @@ Status key: verified third party = on a source he does not control; self-reporte
 
 Numbers deliberately absent: jersey number (CONTENT.md L12), GPA, phone, height and weight, user counts, revenue, the old site's 94.5%, 1,500 members and 4 continents (old-site L421, L523, not in CONTENT.md), "three testimonials" (old-site L542, the quotes themselves carry it), and every price from old-site L554-668 (plan: no rate card).
 
-Bans check: grepped this file on 2026-10-23. Em dashes (U+2014): 0. En dashes (U+2013): 0. Minus signs (U+2212): 0. No hits in page copy for cornerback, GPA, finance professional, AI-powered, clinically, proven, improves performance, reduces anxiety, emotional control, biohacking, mindfulness app, mental wellness, JAM Arche, contact@jamarimyers.com, CIM, VDR, sell-side, phone, jersey numbers 21, 22 or 32, leverage, elevate, unlock, empower, seamless, passionate, world-class, cutting-edge or best. The only hits are outside page copy: "Provenance" (matches "proven"), this guide's own list of bans, and stripped provenance notes. "first-gen" and "D1" appear in copy only in the gated hero label. One "not X" contrast remains in copy, "Structured deals, not handshake agreements" (creative, What it taught me), kept because the plan fixes it; the contrasts in voice anchors 1, 2 and 3 were trimmed. Partner testimonials are quoted as given, including their own superlatives ("absolute pleasure", "incredibly professional").
+Bans check: re-grepped this file on 2026-10-23 after the fact check. Em dashes (U+2014): 0. En dashes (U+2013): 0. Minus signs (U+2212): 0. No hits in page copy for cornerback, GPA, finance professional, AI-powered, clinically, proven, improves, reduces anxiety, emotional control, biohacking, mindfulness app, mental wellness, JAM Arche, contact@jamarimyers.com, CIM, VDR, sell-side, phone, address, jersey numbers 21, 22 or 32, leverage, elevate, unlock, empower, seamless, passionate, world-class, cutting-edge or best, and none for "grew up", "boarded" or "I read every message". The only hits are outside page copy: "Provenance" (matches "proven"), this guide's own list of bans, "L21-22" in a source reference, "address" in a provenance note, the words "grew up" and "boarded" inside [CONFIRM] questions, and "I read every message myself" inside the provenance note that records its cut. "first-gen" and "D1" appear in copy only in the gated hero label (and in stripped provenance quotes of the old site). Contrast constructions in copy: four, each Jamari's own and each alone in its section, per the orchestrator ruling: voice anchor 2 (osmo, Origin), voice anchor 1 (journey, Stopping), voice anchor 3 (journey, What it taught me) and "Structured deals, not handshake agreements" (creative, What it taught me). Each anchor appears verbatim once on the site. Partner testimonials are quoted as given, including their own superlatives ("absolute pleasure", "incredibly professional").
